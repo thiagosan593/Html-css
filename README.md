@@ -9,5 +9,7 @@ Num| Descrição
 04|[Favicon](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex004)
 05|[Hierarquia de Tags de Título](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/Ex005)
 06|[Hierarquia de Tags de Título](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex006)
-
+07|[Formatação de Textos](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex007)
+08|[Outras Formatações](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex008)
+09|[Listas](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex009)
 
