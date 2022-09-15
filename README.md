@@ -12,4 +12,5 @@ Num| Descrição
 07|[Formatação de Textos](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex007)
 08|[Outras Formatações](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex008)
 09|[Listas](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex009)
+10|[Trabalhando com Links](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex010)
 
