@@ -4,10 +4,13 @@ body{
   color: black
 }
 h1{
-    color: brown;
-    background-color: rgb(228, 11, 11);
+    color:maroon;
+    background-color:goldenrod;
 }
 h2{
     color: brown;
+}
+p.lado{
+    text-align: center;
 }
 
