@@ -1,22 +1,19 @@
- body{
-    color: white;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+body{
+    color: black;
         
 }
 nav{
     background-color: #0c4e80;
-    padding-top: 4px;
-    padding-right: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
+   padding: 12px;
 }
 a{
      font-size: auto;
     color: white;
     text-decoration: none;
-    padding-top: 6px;
-    padding-right: 6px;
-    padding-bottom: 6px;
-    padding-left: 6px;
+    padding: 9px;
     text-justify: auto;
 }
 a:hover{
@@ -25,4 +22,16 @@ a:hover{
 
 iframe{
    margin-top: center;
+}
+img{
+    width: 1250px;
+    height: auto;
+
+}
+h1{
+    font-family:'Dancing Script';
+    font-size: 100px;
+    color: black;
+    text-decoration: dotted;
+    text-align: center;
 }
