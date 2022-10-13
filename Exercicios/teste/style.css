@@ -1,8 +1,24 @@
-body{
-    background-color:
-    height: 100px;
+ body{
+    color: white;
+        
 }
-main{
+div{
     background-color: #0c4e80;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+a{
+     font-size: auto;
+    color: white;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+a:hover{
+    color: aqua;
 }
 
