@@ -8,6 +8,7 @@ body{
 nav{
     background-color: #0c4e80;
    padding: 12px;
+   font-weight: bolder;
 }
 a{
      font-size: auto;
@@ -23,15 +24,17 @@ a:hover{
 iframe{
    margin-top: center;
 }
-img{
-    width: 1250px;
-    height: auto;
 
-}
 h1{
-    font-family:'Dancing Script';
-    font-size: 100px;
+    font-family:'Dancing Script','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
     color: black;
     text-decoration: dotted;
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+p{
     text-align: center;
 }
