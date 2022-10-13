@@ -1,0 +1,520 @@
+/**
+ * In�cio Topo
+ */
+body{
+	background-image: none !important;
+	margin: 0;
+}
+.font-bold {
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+#header, #rodapeTop, #rodapeBotton {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+#header-section1 {
+	background-color: #34558c;
+	height: 80px;
+	border-top: 4px solid #3e66a3;
+}
+
+#header-section1-internas {
+	background-color: #34558c;
+	height: 43px;
+	border-top: 4px solid #3e66a3;
+}
+
+#header-section1 .float-right {
+	padding-top: 25px;
+}
+
+#header-section2 {
+	background: transparent url('../imagens/imagens_cabecalho/header-section2-bg.png') left top repeat-x;
+	height: 130px;
+}
+
+#header-section2-internas {
+	background: transparent url('../imagens/imagens_cabecalho/header-section2-internas-bg.png') left top repeat-x;
+	height: 139px;
+}
+
+#header-section3 {
+	/*background: transparent url('../imagens/imagens_cabecalho/header-section3-bg1.png') left top repeat-x;*/
+	background: #496fba;
+	height: 50px;
+}
+
+#header-section3-internas {
+	background: transparent url('../imagens/imagens_cabecalho/header-section3-internas-bg.png') left top repeat-x;
+	height: 61px;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;	
+}
+
+#logo {
+	display: block;
+	float: left;
+	background: transparent url('../imagens/imagens_cabecalho/logo1.png') left center no-repeat;
+	width: 195px;
+	height: 80px;
+	text-indent: -5000em;
+}
+
+#logo-internas {
+	display: block;
+	float: left;
+	background: transparent url('../imagens/imagens_cabecalho/logo-internas4.png') left center no-repeat;
+	/*background: transparent url('../imagens/imagens_cabecalho/Prefeitura_Logo_Provisoria2.jpg') left center no-repeat;*/
+	width: 350px;
+	height: 43px;
+	text-indent: -5000em;
+}
+
+#logo-pagina-interna {
+	margin-top: 33px;
+}
+
+#logo-pagina-interna-img {
+	border: 0;
+	width: 160px;
+	margin-left: 45px;
+	margin-top: 10px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+/**
+ * Menu branco horizontal.
+ */
+
+.white-menu {
+	list-style: none;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 16px;
+	padding: 0;
+
+}
+
+#header-section3 .white-menu {
+	margin: -34px 10 0 0;
+}
+
+.white-menu li {
+	float: left;
+	padding: 0 8px;
+	background: transparent url('../imagens/imagens_cabecalho/separador-white-menu.png') right center no-repeat;
+}
+
+#header-section3 .white-menu li {
+	height: 42px;
+    line-height: 42px;
+	background-image: url('../imagens/imagens_cabecalho/separador-white-menu2.png');
+	/*margin-right: 1px;*/
+	margin-top:-15px;
+	font-size:11px;
+}
+
+.white-menu li.last {
+	background-image: none !important;
+	margin: 0;
+}
+
+.white-menu li a:link,
+.white-menu li a:visited,
+.white-menu li a:hover {
+	color: #FFFFFF !important;
+	text-decoration: none;
+}
+
+.white-menu .color1 {
+	border-top: 3px solid #6fbeea;
+}
+
+.white-menu .color2 {
+	border-top: 3px solid #fbad18;
+}
+
+.white-menu .color3 {
+	border-top: 3px solid #638f3e;
+}
+
+.white-menu .color4 {
+	border-top: 3px solid #d74b27;
+}
+
+.white-menu .color5 {
+	border-top: 3px solid #000;
+}
+.white-menu .color6{
+	border-top: 3px solid #f7941e;
+}
+/**
+ * Formul�rio de busca.
+ */
+
+.search-field {
+	float: left;
+	padding-top: 3px;
+}
+
+.search-field input {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	width: 242px;
+	height: 44px;
+	border: none;
+	padding: 0px 50px 0 10px;
+	color: #717986;
+	background: transparent url('../imagens/imagens_cabecalho/fundo-busca.png') left top no-repeat;
+}
+
+/**
+ * Box de links para redes sociais.
+ */
+
+.social-links {
+	/*padding-top: 35px;*/
+	width: 100%;
+}
+
+#header-section3-internas .social-links {
+	padding-top: 0;
+}
+
+.social-links span {
+	float: left;
+	margin-bottom: 5px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+#header-section3-internas .social-links span {
+	color: #34558B;
+	margin-top: 13px;
+	width: 100px;
+	text-align: left;
+}
+
+.social-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 5px 0 0 0;
+}
+
+#header-section3-internas .social-links ul {
+	margin: 12px 0 0 10px !important;
+}
+
+.social-links ul li {
+	float: left;
+	margin-right: 7px;
+}
+
+.social-links ul li a {
+	width: 35px;
+	height: 35px;
+	text-indent: -5000em;
+	display: block;	
+}
+
+.social-links .facebook {
+	background-image: url('../imagens/imagens_cabecalho/facebook-icon.png');
+}
+
+.social-links .youtube {
+	background-image: url('../imagens/imagens_cabecalho/youtube-icon.png');
+}
+
+.social-links .flickr {
+	background-image: url('../imagens/imagens_cabecalho/flickr-icon.png');
+}
+
+.social-links .instagram {
+	background-image: url('../imagens/imagens_cabecalho/instagram-icon.png');
+}
+
+.social-links .twitter {
+	background-image: url('../imagens/imagens_cabecalho/twitter-icon.png');
+}
+
+/**
+ * �rea de publicidade.
+ */
+
+#advertising {
+	width: 740px;
+	height: 90px;
+	overflow: hidden;
+	background: transparent url('../imagens/imagens_cabecalho/bg-publicidade.png') left center no-repeat;
+	text-align: right;
+	margin-top: 20px;
+}
+
+#header-section2-internas #advertising {
+	background: transparent url('../imagens/imagens_cabecalho/bg-publicidade-internas.png') left center no-repeat;
+	margin-top: 25px;
+}
+
+/**
+ * Fim Topo
+ */
+	
+/**
+ * Rodape
+ */  			
+
+.blueSea {
+	background:url(../imagens/imagens_cabecalho/bg_rodapeBottom.jpg) left repeat-x;
+	color: black;
+}
+
+.blueDots {
+	background: transparent url('../imagens/imagens_cabecalho/bg_rodapeTopo1.png') left top repeat-x;
+	border-bottom: 2px solid #35568C;
+	color: black;
+}
+
+#rodapeBotton {
+	height: 58px;
+}
+
+#rodapeTop {
+	height: 202px;
+	clear: both;
+}
+
+#rodapeTop .rodape_ {
+	padding-top: 23px;
+}
+
+#rodapeTop ul li {
+    list-style: none outside none;
+}
+
+.rodape_ {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.rodape_esquerda {
+	width: 25%;
+	float: left;
+	text-align: left;
+}
+
+.rodape_esquerda ul {
+	margin: 0;
+	padding: 0;
+}
+
+.rodape_esquerda ul li a img {
+	border: none;
+}
+
+.rodape_esquerda .separador {
+	width: 100%;
+	background-position: left center;
+}
+
+.rodape_esquerda .social-links {
+	padding-top: 20px;
+}
+
+.rodape_centro {
+    float: left;
+    text-align: left;
+    width: 25%;
+}
+
+.rodape_direita {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.marca_registrada {
+	background: url('../imagens/imagens_cabecalho/registrada.jpg') left no-repeat;
+	height: 20px;
+	width: 50%;
+	margin: 20px 0 0 1px;
+	float: left;
+}
+
+.subMenuRodape{
+	float: right;
+	margin-top: 14px;
+}  
+
+.subMenuRodape ul{
+	float:right;
+	margin:0;
+}
+
+.subMenuRodape ul li{
+	margin-left:5px;
+	list-style:none;
+	float:left;
+}
+
+.separador {
+	background: url(../imagens/imagens_cabecalho/separador-rodape.png) center no-repeat;
+	height: 2px;
+	width: 45px;
+	float: left;
+	clear: both;
+}
+
+.separador2{
+	background:transparent url(../imagens/imagens_cabecalho/separador-white.jpg) center no-repeat;
+	height:10px;
+	width:3px;
+	float:left;
+	margin-top:1px;
+	margin-left:3px;
+}
+
+.botaoAcesse {
+	display: block;
+	text-indent: -5000em;
+	background: url(../imagens/imagens_cabecalho/acesseJa.jpg) center no-repeat;
+	height: 36px;
+	width: 145px;
+	margin-top: 0px;
+}
+
+.botaoEdicoes{
+	clear:both;
+	margin-top:10px;
+	float:left;
+}
+	
+.logoMini{
+	background :url(../imagens/imagens_cabecalho/Marca_Prefeitura_Fundo_Azul3.png)  no-repeat;
+	/*background :url(../imagens/imagens_cabecalho/logoMini.png)  no-repeat;*/
+	/*height: 64px;*/
+	height: 140px;
+	/*width: 152px;*/
+	width: 152px;
+	float: right;
+	clear: both;
+	margin-top: 0; /* 10px; */
+}
+
+#copright {
+	float: left !important;
+	margin-top: 13px;
+	font-size: 14px;
+	text-align: left;
+}
+
+.endereco-prefeitura {
+	font-weight: normal;
+	font-size: 11px;
+	letter-spacing: 0px;
+}
+
+/**
+ * Menu branco do rodap�.
+ */
+
+.white-menu-rodape {
+	list-style: none;
+	text-transform: uppercase;
+	float: left;
+	padding: 0;
+	color: #FFFFFF !important;
+}
+
+
+.white-menu-rodape li {
+	color: #FFFFFF !important;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.white-menu-rodape li a:link, .white-menu li a:visited, .white-menu li a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.white-menu-rodape li.white-menu-small {
+	font-size: 12px; /* 13px */
+	text-transform: none;
+}
+
+.white-menu-smallx {
+	color: #FFFFFF;
+	font-size: 11px;
+	float: right;
+	clear: both;
+}
+
+.white-menu-rodape li a:link,
+.white-menu-rodape li a:visited,
+.white-menu-rodape li a:hover {
+	color: #FFFFFF !important;
+	text-decoration: none;
+}
+
+.white-menu.white-menu-smallx li {
+	padding: 0 10px;
+}
+
+.rodape_esquerda .white-menu-rodape {
+	width: 100%;
+}
+
+.area-interesse{
+	float:left;
+	margin-top:12px;
+	height:25px;
+	font-size:13;
+	color:#FFFFFF;
+	background-color:#3a61a2;
+	font-weight:bold;
+	border-color:#32548d;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	width:158px;
+	margin-right:10px;
+
+}
+
+.orgaos-municipais{
+	float:left;
+	margin-top:12px;
+	height:25px;
+	font-size:13px;
+	color:#FFFFFF;
+	background-color:#3a61a2;
+	font-weight:bold;
+	border-color:#32548d;
+	/*text-transform: uppercase;*/
+	font-family: 'Lato', sans-serif;
+	width:81px;
+}
+
+/***************************************************************************************************************/
+
+/*.rodape_total{
+	position: absolute;
+	width: 100%;
+	bottom:0 ;
+}*/
+

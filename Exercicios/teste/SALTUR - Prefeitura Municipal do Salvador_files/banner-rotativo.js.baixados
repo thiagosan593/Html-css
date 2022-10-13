@@ -1,0 +1,18 @@
+var bannerAtual= -1;
+var banners=[
+	{ url: 'http://www.salvador.ba.gov.br/Cabecalho/cartilha.html', tempo: 5000 },
+	{ url: 'http://www.salvador.ba.gov.br/Cabecalho/natal.html', tempo: 5000 }
+	//{ url: 'http://www.salvador.ba.gov.br/Cabecalho/corona.html', tempo: 5000 }
+	// { url: 'http://www.salvador.ba.gov.br/Cabecalho/consciencia-negra.html', tempo: 5000 },
+	// { url: 'http://www.salvador.ba.gov.br/Cabecalho/onibus_ar.html', tempo: 5000 },
+	// { url: 'http://www.salvador.ba.gov.br/Cabecalho/revista_clima.html', tempo: 5000 },
+	// { url: 'http://www.salvador.ba.gov.br/Cabecalho/cadastramento_terreiros.html', tempo: 4000 }
+];
+
+
+	$(document).ready( function(){trocarBanner();});
+	function trocarBanner(){bannerAtual++;
+		if ( bannerAtual == banners.length ) bannerAtual = 0;var banner = banners[bannerAtual];
+		$(iframe).attr('src', banner.url);setTimeout( trocarBanner, banner.tempo );}
+
+// var bannerAtual= -1;var banners=[{ url: 'http://www.salvador.ba.gov.br/Cabecalho/dia-mulher-negra.html', tempo: 20000 },{ url: 'http://www.salvador.ba.gov.br/Cabecalho/a_cidade_somos_nos.html', tempo: 20000 },{ url: 'http://www.salvador.ba.gov.br/Cabecalho/cmdca.html', tempo: 20000 },{ url: 'http://www.salvador.ba.gov.br/Cabecalho/mosquito_zero.html', tempo: 20000 }];$(document).ready( function(){trocarBanner();});function trocarBanner(){bannerAtual++;if ( bannerAtual == banners.length ) bannerAtual = 0;var banner = banners[bannerAtual];$(iframe).attr('src', banner.url);setTimeout( trocarBanner, banner.tempo );}

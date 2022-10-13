@@ -1,0 +1,41 @@
+jQuery(document).ready( function() {
+	jQuery('#fale_conosco').submit( function ( evt )
+	{
+		jQuery('#fale_conosco .btn').hide();
+		jQuery('#fale_conosco .msg_sucesso').hide();
+		jQuery('#fale_conosco .msg_falha').hide();
+		jQuery('#fale_conosco .msg_carregando').show();
+
+		jQuery.ajax({
+			type: 'POST',
+			url: urlAtual,
+			data: {
+				task: 'mod_contact_form_sendmail',
+				nome: jQuery('#fale_conosco input[name="nome"]').val(),
+				email: jQuery('#fale_conosco input[name="email"]').val(),
+				assunto: jQuery('#fale_conosco input[name="assunto"]').val(),
+				mensagem: jQuery('#fale_conosco textarea[name="mensagem"]').val()
+			},
+			success: function( resultado )
+			{
+				jQuery('#fale_conosco .msg_carregando').hide();
+
+				if ( resultado.sucesso == 1 )
+				{
+					jQuery('#fale_conosco .msg_sucesso').html( resultado.msg );
+					jQuery('#fale_conosco .msg_sucesso').show();
+				}
+				else
+				{
+					jQuery('#fale_conosco .msg_falha').html( resultado.msg );
+					jQuery('#fale_conosco .msg_falha').show();
+					jQuery('#fale_conosco .btn').show();
+				}
+			},
+			dataType: "json"
+		});
+
+		evt.preventDefault();
+		return false;
+	});
+});

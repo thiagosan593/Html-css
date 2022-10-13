@@ -1,0 +1,729 @@
+$(document).ready(function () {
+	inserirLogoPaginaInterna();
+
+});
+
+
+function inserirLogoPaginaInterna() {
+	var url = (window.location != window.parent.location) ? document.referrer : document.location;
+
+	var home = url.replace(/\.salvador\.ba\.gov\.br.*/, ".salvador.ba.gov.br");
+	url = url.replace("http://www.", "");
+	url = url.replace("http://", "");
+	url = url.replace(/\.salvador\.ba\.gov\.br.*/, "");
+	url = url.replace(".homologa", "");
+
+	//url = "http://www.salvador.ba.gov.br/Cabecalho/PortalSalvadorTopo.html";
+
+	var logo = getLogoByName(url);
+
+	document.getElementById("logo-pagina-interna-img").src = logo.url;
+	document.getElementById("logo-pagina-interna-img").style.marginTop = logo.marginTop;
+	document.getElementById("logo-pagina-interna").getElementsByTagName("a")[0].href = home;
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/marca_prefeitura_bairro.png") {
+		document.getElementById("logo-pagina-interna-img").style.width = "207px";
+	}
+
+	// if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/marca_cem.png") {
+	// 	document.getElementById("logo-pagina-interna-img").style.width = "85%";
+	// 	document.getElementById("logo-pagina-interna").style.width = "20%";
+	// 	document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+	// }
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/transalvador.png") {
+		document.getElementById("logo-pagina-interna-img").style.width = "210px";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/COGEL_MATEUS.png") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+		document.getElementById("logo-pagina-interna").style.display = "none";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/FGM_transparente.png") {
+		document.getElementById("logo-pagina-interna-img").style.width = "174px";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SUSPREV_MATEUS.png") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "5px";
+		document.getElementById("logo-pagina-interna-img").style.width = "195px";
+		document.getElementById("logo-pagina-interna-img").style.height = "69px";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMUR2.png") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMUT2.png") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "-8px";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/linhaviva_marca_azul.png") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "20px";
+		document.getElementById("logo-pagina-interna-img").style.width = "176px";
+		document.getElementById("logo-pagina-interna-img").style.height = "103px";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo_escritorio2.png") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "5px";
+		document.getElementById("logo-pagina-interna-img").style.width = "199px";
+		document.getElementById("logo-pagina-interna-img").style.height = "94px";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/salvadoremcampo.png") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "-21px";
+		document.getElementById("logo-pagina-interna-img").style.width = "195px";
+		document.getElementById("logo-pagina-interna-img").style.height = "128px";
+	}
+
+	if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/sedur.png") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "30px";
+		document.getElementById("logo-pagina-interna-img").style.width = "60%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+	}
+
+	// if (logo.url == "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/sucom.png") {
+	// 	document.getElementById("logo-pagina-interna-img").style.marginLeft = "-21px";
+	// 	document.getElementById("logo-pagina-interna-img").style.width = "96%";
+	// 	document.getElementById("logo-pagina-interna").style.width = "20%";
+	// }
+
+	if (url == "capoeiraviva") {
+		document.getElementById("link-logo").href = "http://www.culturafgm.salvador.ba.gov.br/";
+		document.getElementById("link-logo").target = "_blank";
+	}
+
+	if (url == "servidorvoluntario") {
+		document.getElementById("logo-pagina-interna-img").style.width = "156px";
+		document.getElementById("logo-pagina-interna-img").style.height = "92px";
+	}
+	if (url == "sorteiomatricula") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "-35px";
+		document.getElementById("logo-pagina-interna-img").style.width = "246px";
+		document.getElementById("logo-pagina-interna-img").style.height = "75px";
+	}
+
+	if (url == "fundacaocidademae") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "42px";
+		document.getElementById("logo-pagina-interna-img").style.width = "154px";
+		document.getElementById("logo-pagina-interna-img").style.height = "48px";
+
+	}
+
+	if (url == "fcm") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "42px";
+		document.getElementById("logo-pagina-interna-img").style.width = "154px";
+		document.getElementById("logo-pagina-interna-img").style.height = "48px";
+
+	}
+
+	if (url == "primeiropasso") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		//document.getElementById("logo-pagina-interna-img").style.width = "219px";
+		//document.getElementById("logo-pagina-interna-img").style.height = "80px";
+	}
+
+	if (url == "pgms") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "42px";
+		document.getElementById("logo-pagina-interna-img").style.width = "154px";
+		document.getElementById("logo-pagina-interna-img").style.height = "48px";
+	}
+
+	if (url == "fmlf") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "42px";
+		document.getElementById("logo-pagina-interna-img").style.width = "154px";
+		document.getElementById("logo-pagina-interna-img").style.height = "48px";
+	}
+
+	if (url == "spm") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+	}
+	
+	if (url == "spmj") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+	}
+
+	if (url == "sefaz") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "217px";
+		document.getElementById("logo-pagina-interna-img").style.height = "88px";
+
+	}
+	if (url == "credenciamento") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "209px";
+		document.getElementById("logo-pagina-interna-img").style.height = "73px";
+
+	}
+	if (url == "liderempreendedor") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "209px";
+		document.getElementById("logo-pagina-interna-img").style.height = "73px";
+
+	}
+
+	if (url == "semps") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "-50px";
+		// document.getElementById("logo-pagina-interna-img").style.width = "248px";
+		document.getElementById("logo-pagina-interna-img").style.height = "55px";
+
+	}
+
+	if (url == "sucop") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "30px";
+		// document.getElementById("logo-pagina-interna-img").style.width = "178px";
+		document.getElementById("logo-pagina-interna-img").style.height = "68px";
+
+	}
+
+	if (url == "arsal") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "30px";
+		// document.getElementById("logo-pagina-interna-img").style.width = "178px";
+		document.getElementById("logo-pagina-interna-img").style.height = "68px";
+
+	}
+
+	if (url == "semob") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		// document.getElementById("logo-pagina-interna-img").style.height = "56px";
+
+	}
+
+	if (url == "mobilidade") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "90%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+		// document.getElementById("logo-pagina-interna-img").style.height = "72px";
+
+	}
+	if (url == "transalvadorantigo") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "30px";
+		document.getElementById("logo-pagina-interna-img").style.width = "150px";
+		document.getElementById("logo-pagina-interna-img").style.height = "68px";
+
+	}
+	if (url == "codesal") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "15px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "-12px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+		// document.getElementById("logo-pagina-interna-img").style.height = "90px";
+
+	}
+	if (url == "turismo") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "178px";
+		document.getElementById("logo-pagina-interna-img").style.height = "72px";
+
+	}
+	if (url == "saltur") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "178px";
+		document.getElementById("logo-pagina-interna-img").style.height = "72px";
+
+	}
+	if (url == "comunicacao") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+		// document.getElementById("logo-pagina-interna-img").style.height = "73px";
+
+	}
+	if (url == "secom") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "205px";
+		document.getElementById("logo-pagina-interna-img").style.height = "73px";
+
+	}
+	if (url == "agecom") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "205px";
+		document.getElementById("logo-pagina-interna-img").style.height = "73px";
+
+	}
+
+	if (url == "simm") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+
+	}
+	if (url == "semtel") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+
+	}
+	if (url == "semdec") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+
+	}
+	if (url == "cem") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+
+	}
+	if (url == "previdencia") {
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+		document.getElementById("logo-pagina-interna").style.marginTop = "10px";
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "10px";
+		document.getElementById("logo-pagina-interna-img").style.width = "106%";
+
+	}
+	if (url == "fumpres") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "175px";
+
+	}
+	if (url == "salvadorinternacional") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "115px";
+		// document.getElementById("logo-pagina-interna-img").style.height = "73px";
+
+	}
+
+	if (url == "sustentabilidade") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+
+	}
+
+	if (url == "casacivil") {
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "12px";
+	}
+	
+	if (url == "seman") {
+		document.getElementById("logo-pagina-interna-img").style.width = "90%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "5px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "5px";
+	}
+
+	if (url == "seinfra") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+	}
+	
+	if (url == "ordempublica") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		// document.getElementById("logo-pagina-interna-img").style.marginTop = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "96%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+	}
+	
+	if (url == "salvamar") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "115%";
+	}
+	
+	if (url == "guardamunicipal") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+	}
+
+	if (url == "prefeiturabairro") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "200px";
+	}
+
+	if (url == "gestaopublica") {
+		// document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "-10px";
+		document.getElementById("logo-pagina-interna-img").style.width = "92%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+	}
+	if (url == "semge") {
+		// document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "-10px";
+		document.getElementById("logo-pagina-interna-img").style.width = "92%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+	}
+	
+	if (url == "compras") {
+		// document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		// document.getElementById("logo-pagina-interna-img").style.marginTop = "0px";
+		document.getElementById("logo-pagina-interna-img").style.width = "96%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+	}
+
+	if (url == "sempre") {
+		document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "10px";
+		document.getElementById("logo-pagina-interna-img").style.width = "100%";
+		document.getElementById("logo-pagina-interna").style.width = "22%";
+		document.getElementById("logo-pagina-interna").style.marginLeft = "0px";
+	}
+	
+	if (url == "desal") {
+		// document.getElementById("logo-pagina-interna-img").style.marginLeft = "0px";
+		document.getElementById("logo-pagina-interna-img").style.marginTop = "-5px";
+		document.getElementById("logo-pagina-interna-img").style.width = "85%";
+		document.getElementById("logo-pagina-interna").style.width = "20%";
+	}
+
+
+}
+
+function getLogoByName(name) {
+	var urls = {
+
+		"prefeiturabairro": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/marca_prefeitura_bairro.png",
+			marginTop: "0px"
+		},
+		"sempre": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMPRE1.png",
+			marginTop: "0px"
+		},
+		"sorteiomatricula": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logoSecretariadaEducacao.png",
+			marginTop: "0px"
+		},
+		"agecom": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SECOM.png",
+			marginTop: "0px"
+		},
+		"secom": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SECOM.png",
+			marginTop: "0px"
+		},
+		"comunicacao": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SECOM.png",
+			marginTop: "0px"
+		},
+		"comunicacaov5": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo-topo-comunicacao.png",
+			marginTop: "0px"
+		},
+		"transalvador": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/transalvador.png",
+			marginTop: "15px"
+		},
+		"ordempublica": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMOP2.png",
+			marginTop: "0px"
+		},
+		"salvamar": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMOP2.png",
+			marginTop: "0px"
+		},
+		"guardamunicipal": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMOP2.png",
+			marginTop: "0px"
+		},
+		"reparacao": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMUR2.png",
+			marginTop: "0px",
+		},
+		"semur": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMUR2.png",
+			marginTop: "0px",
+		},
+		"terreiro": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMUR2.png",
+			marginTop: "0px",
+		},
+		"gestaopublica": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMGE-logo.png",
+			marginTop: "0px"
+		},
+		"semge": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMGE-logo.png",
+			marginTop: "0px"
+		},
+		"compras": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMGE2.png",
+			marginTop: "0px"
+		},
+		"desenvolvimentourbano": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMUT2.png",
+			marginTop: "5px"
+		},
+		"linhaviva": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/linhaviva_marca_azul.png",
+			marginTop: "-18px"
+		},
+		"sindec": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SINDEC2.png",
+			marginTop: "4px"
+		},
+		"seinfra": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SINDEC2.png",
+			marginTop: "0px"
+		},
+		"segurancaurbana": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SUSPREV_MATEUS.png",
+			marginTop: "3px"
+		},
+		"tecnologia": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/COGEL_MATEUS.png",
+			marginTop: "0px"
+		},
+		"tecnologiaintranet": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/COGEL_MATEUS.png",
+			marginTop: "1px"
+		},
+		"cogel": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/COGEL_MATEUS.png",
+			marginTop: "1px"
+		},
+		"culturafgm": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/FGM_transparente.png",
+			marginTop: "-8px"
+		},
+		"cultura": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/FGM_transparente.png",
+			marginTop: "-8px"
+		},
+		"capoeiraviva": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/FGM_transparente.png",
+			marginTop: "-8px"
+		},
+		"copa": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo_escritorio2.png",
+			marginTop: "4px"
+		},
+		"salvadoremcampo": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/salvadoremcampo.png",
+			marginTop: "-33px"
+		},
+		"casavida": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SINDEC2.png",
+			marginTop: "4px"
+		},
+		"salvadorvaidebike": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo-salvador-vai-de-bike.png",
+			marginTop: "4px"
+		},
+		"novaorla": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo-nova-orla-salvador.png",
+			marginTop: "-10px"
+		},
+		"jovemaprendiz": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo-jovem-aprendiz-empreendedor.jpg",
+			marginTop: "-14px"
+		},
+		"limpurb": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Limpurb_Logo.png",
+			marginTop: "4px"
+		},
+		"ouvidoriav5": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Logotipo-OGM.png",
+			marginTop: "4px"
+		},
+		"ouvidoria": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Logotipo-OGM.png",
+			marginTop: "4px"
+		},
+		"sustentabilidade": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo_secis_2019.png",
+			marginTop: "0px"
+		},
+		"desal": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/desal2014.png",
+			marginTop: "0px"
+		},
+		"servidorvoluntario": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logobrasilvoluntario.png",
+			marginTop: "-11px"
+		},
+		"observatorio": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo_secis_2019.png",
+			marginTop: "4px"
+		},
+		"transparencia": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/transparencia_completa.png",
+			marginTop: "-10px"
+		},
+		"fundacaocidademae": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/MARCA_CIDADE_MAE.png",
+			marginTop: "10px"
+		},
+		"fcm": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/MARCA_CIDADE_MAE.png",
+			marginTop: "10px"
+		},
+		"primeiropasso": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/primeiro_passo.png",
+			marginTop: "-8px"
+		},
+		"pgms": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Prefeitura_Procuradoria_Geral_Municipio2.png",
+			marginTop: "10px"
+		},
+		"fmlf": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/FMLF_Fundacao_Mario_Leal_Ferreira.png",
+			marginTop: "10px"
+		},
+		"defesacivil": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Logo_CODESAL.png",
+			marginTop: "10px"
+		},
+		"spm": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SPM_logo.png",
+			marginTop: "0px"
+		},
+		"spmj": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SPM_logo.png",
+			marginTop: "0px"
+		},
+		"sefaz": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Logo_SecretariaFazenda.png",
+			marginTop: "-5px"
+		},
+		"credenciamento": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/mobilidademarca.png",
+			marginTop: "-5px"
+		},
+		"tudolimpo": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Limpurb_Logo.png",
+			marginTop: "4px"
+		},
+		"liderempreendedor": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/marca_parque_topo.png",
+			marginTop: "4px"
+		},
+		"cem": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMDEC.png",
+			marginTop: "10px",
+			width: '90%'
+		},
+		"semps": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMPS.png",
+			marginTop: "7px"
+		},
+		"sucop": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/sucop_logo.png",
+			marginTop: "7px"
+		},
+		"arsal": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Arsal_logo.png",
+			marginTop: "7px"
+		},
+		"semob": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/semob_logo.png",
+			marginTop: "0px",
+			marginLeft: "0px"
+		},
+		"mobilidade": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/semob_logo.png",
+			marginTop: "0px",
+			marginLeft: "0px"
+		},
+		"transalvadorantigo": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/semob_logo.png",
+			marginTop: "0px"
+		},
+		"codesal": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Logo_CODESAL.png",
+			marginTop: "0px"
+		},
+		"turismo": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/saltur_logo.png",
+			marginTop: "3px"
+		},
+		"saltur": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/saltur_logo.png",
+			marginTop: "3px"
+		},
+		"simm": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMDEC.png",
+			marginTop: "10px"
+		},
+		"semtel": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMDEC.png",
+			marginTop: "10px"
+		},
+		"semdec": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMDEC.png",
+			marginTop: "10px"
+		},
+		"previdencia": {
+			// url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Logo_FUMPRES.jpg",
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/FUMPRES.png",
+			marginTop: "-5px"
+		},
+
+		"fumpres": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/SEMGE.png",
+			//url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/Logo_FUMPRES.jpg",
+			marginTop: "-5px"
+		},
+		"salvadorinternacional": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/sedur.png",
+			marginTop: "0px"
+		},
+		"seman": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/marca_seman.png",
+			marginTop: "0px"
+		},
+		"casacivil": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo_casacivil.png",
+			marginTop: "0px",
+			width: "100%"
+		},
+		"sedur": {
+			url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/sedur.png",
+			marginTop: "0px",
+			width: "100%"
+		},
+		// "sucom": {
+		// 	url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/sucom.png",
+		// 	marginTop: "0px",
+		// 	width: "100%"
+		// },
+	};
+
+	for (var i in urls) {
+		if (i == name) {
+			return urls[i];
+		}
+	}
+
+	// Caso n�o tenha encontrado a imagem, utilize uma imagem padr�o.
+	return {
+		url: "http://www.salvador.ba.gov.br/Logotipos_Cabecalho/logo_cabecalho/logo-iframe.png",
+		// marginTop: "-10px",
+		width: "170px",
+		marginLeft: "100px"
+	};
+}
+
+function urlExists(url) {
+	var http = new XMLHttpRequest();
+	http.open('HEAD', url, false);
+	http.send();
+	return (http.status != 404);
+}
+
+function iniciarCamposBusca() {
+	$('.search-field input').focus(function () {
+		if ($(this).val() == 'PESQUISAR') $(this).val('');
+	});
+
+	$('.search-field input').focusout(function () {
+		if ($(this).val() == '') $(this).val('PESQUISAR');
+	});
+}

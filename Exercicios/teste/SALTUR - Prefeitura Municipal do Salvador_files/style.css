@@ -1,0 +1,975 @@
+/* CSS Document */
+
+ /* Fontes */
+  @font-face {
+    font-family: Gotham ;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/gotham-bold-webfont.ttf);
+}
+
+  @font-face {
+    font-family: Raleway ;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/raleway-regular-webfont.ttf);
+}
+
+
+/* PlaceHolder */
+::-webkit-input-placeholder {
+   color: black;
+}
+
+:-moz-placeholder {
+   color: black;
+}
+
+::-moz-placeholder {
+   color: black;  
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+}
+
+/* PlaceHolder Fim*/
+
+
+/* Banner */
+
+.banner img{
+  text-align: center;
+  margin: auto;
+}
+.banner .item #inner-baner{
+  margin: auto;
+}
+#mais-festas {
+    margin-left: 90%;
+    margin-top: 10%;
+}
+
+#inner-banner{
+  width:397px; 
+  height:180px; 
+  background-color: rgba(255,255,255, 0.7);
+  position: absolute;
+  top: 13%; 
+  left: 7%;
+  margin:auto;
+}
+
+#inner-banner p{
+  color:rgb(25,100,172); 
+  font-weight:bold;
+  font-family: Gotham;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+#inner-banner p, #inner-banner a{
+  font-size: 16px;
+  margin-left: 3%;
+}
+
+#inner-banner h2{
+    font-size: 36px;
+    color: black;
+    margin-left: 2%;
+}
+
+#carousel{
+  margin-bottom: 30px;
+}
+
+
+.banner-control a{
+    padding:0px 15px;
+
+}
+.banner-control img {
+    position: absolute;
+    left: 77%;
+    padding-left: 18.5%;
+    border-bottom: 2px solid white;
+}
+div#banner-controls {
+    margin-bottom: 15px;
+}
+.banner-control a:focus{
+  text-decoration: none;
+  color: black;
+}
+
+div.fn_static_1 img{
+  width: 223px;
+  height: 211px;
+}
+
+
+.carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+}
+
+.carousel-indicators{
+  top: 333px;
+  }
+.carousel-indicators li{
+  border: 2px solid #1964AC;
+}
+.carousel-indicators .active{
+  background-color: rgb(25,100,172);
+}
+
+ /* fadeout banner */
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* Fim Banner */
+
+
+/* Barra da prefeitura */
+.barra_prefeitura{
+	background-color: #34558c;
+	border-top: 4px solid #3E66A3;
+	border-bottom: 2px solid #CCC;
+	padding: 8px 0;
+	display: block;
+	box-shadow: 0 1px 2px 2px rgba(0,0,0,0.5);
+	position: relative;
+	z-index: 13;
+}
+
+/* Geral */
+li.sigFreeClear {
+    display: none;
+}
+
+
+a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+h1{
+    color:rgb(25,100,172);"
+    margin-bottom: 20px;
+    font-size: 45px; 
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+h1 a{
+  color:rgb(25,100,172);
+  float:left; 
+}
+
+a,h1,h2, h3, h4, h5{
+  font-family: Gotham;
+}
+
+p{
+  font-family: Raleway;
+      font-size: 16px;
+    line-height: 1.7;
+}
+
+a{
+  color:black;
+}
+/* Geral Fim*/
+
+
+/* Menu Topo */ 
+#menu_topo {
+	border: none;
+  	font-family: 'Gotham', sans-serif;
+  	font-size: 18px;
+  	width: auto;
+	background: #FFF;
+}
+
+#saltur{
+    margin-left: -20%;
+    margin-top: 10%;
+}
+
+#logo{
+  padding-left: 10px; 
+  padding-right: 5px; 
+  width: 6%;
+}
+
+
+#menu_topo li {
+    float: left;
+    position: relative;
+}
+
+#menu_topo li a {
+    display: block;
+    line-height: 19px;
+    font-size: 17px;
+
+    margin: 0px 10px;
+    padding: 23px 19px;
+
+
+}
+
+
+#menu_topo li > a:hover,
+#menu_topo ul li:hover > a {
+  	text-decoration: none;
+    border-bottom: 5px solid #1964AC;
+    background-color: transparent;
+}
+
+
+#menu_topo li:hover li a {
+  	background: none;
+}
+
+
+#menu_topo p {
+  	clear: left;
+}
+/* Menu Topo Fim */
+
+/* Banner Caixa de Corte */
+.caixa_corte {
+    width: 835px;
+    height: 319px;
+    overflow:hidden;
+}
+ 
+.caixa_corte a img {
+    width: 832px;
+    height: 548px;
+    margin-top: -10%;
+}
+
+/* Banner Caixa de Corte Fim */
+
+/* EVENTOS */
+
+div#eventos {
+    margin-top: 40px;
+}
+
+#eventos img {
+    padding-right: 11px;
+}
+
+/* EVENTOS Fim */
+
+/* Rodapé */
+div.rodape p{
+  text-align: center;
+  color:white;
+  margin: 0px;
+  font-family: Gotham;
+  font-size: 22px;
+  font-weight: 300px
+}
+
+/* Rodapé Fim */
+
+
+/* Modulos */
+
+input.btn {
+  /*float: right;*/
+    font-family: Gotham;
+    height: 40px;
+    width: 120px;
+    margin-left: 332px;
+    font-weight: bold;
+    border-radius: 0px;
+    color: white;
+    background-color: #1964AC ;
+}
+
+.back_button{
+	padding-top: 20px !important;
+	padding-left: 10px !important;
+	padding-bottom: 0px !important;
+}
+
+.back_button a{
+	text-decoration: none;
+}
+/* Modulos Fim */
+
+/* Pagina interna */
+
+.conteudo{
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.Conteudo input[type='radio'], .Conteudo input[type='checkbox']{
+  display: inline;
+  margin: 12px 8px 15px 15px;
+}
+
+.conteudo-interno{
+  margin-right: 20px !important;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  border-radius: 5px;
+}
+
+.conteudo-interno h1 a {
+    color: black;
+    float:none;
+}
+
+.conteudo-interno h1{
+    color: black;
+    text-align: center;
+}
+
+
+.conteudo-interno p, .conteudo-interno li{
+  color: #000;  
+}
+
+.conteudo-interno ul{
+  list-style:disc outside none;
+}
+
+.conteudo-interno .icons{
+    display: none
+}
+
+.page-header{
+	margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Gotham;
+}
+
+div.article-info.muted {
+    display: none;
+}
+
+ul.dropdown-menu {
+    display: none;
+}
+/* Pagina interna Fim */
+
+/* Contato */
+
+#texto-contato{
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.fale_conosco textarea{
+    height: 119px !important;
+    width: 420px;
+    /* padding-left: 50px; */
+    margin-left: 30px !important;
+}
+
+input[type='text'], textarea, input[type='email']{
+
+	padding: 0px 4px 5px 10px;
+ 	width: 393px;
+	border: none;
+  	font-size: 16px;
+}
+
+div.fale_conosco input[type='text'], div.fale_conosco textarea, div.fale_conosco textarea input[type='email']{
+  margin: 1px 0 6px 0px;
+  height: 35px;
+  font-family: raleway;
+}
+
+span.contact-name{
+	text-align:left;
+	 font-size: 35px;
+	font-family: Gotham;
+	font-weight: 400;
+	color: #593741;
+}
+
+#contact-form div{
+margin :7px;
+}
+
+form div input, form div textarea, form div .uneditable-input {
+  width: 306px;
+}
+
+textarea[rows="10"], .uneditable-textarea[rows="10"] {
+  height: 220px;
+}
+
+fieldset legend {
+	margin:0px 0px 15px 14px;
+	font-size:15px;
+}
+
+
+.btn:hover, .btn:focus {
+  border-radius: 0px;
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+  background-color: #e6e6e6;
+
+}
+
+.btn-primary {
+	display: inline-block;
+	padding: 4px 12px;
+	margin: 20px 0px 0px 5px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #cccccc;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #b3b3b3;
+	border-radius:7px;
+}
+
+/* Contato Fim */
+
+/* Notícias */
+
+.gn_static.gn_static_1 {
+    width: 378px;
+    float: left;
+}
+
+.gn_header_1 {
+    display: none;
+}
+
+small{
+    color:rgb(25,100,172);
+    font-size: 15px; 
+    font-family: Gotham; 
+    font-weight:300;
+    text-decoration: none;
+
+}
+
+#ultimas-noticias a{
+    color: #212121; 
+    font-size: 21px; 
+    font-family: Gotham; 
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+#text{
+    font-family: raleway;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#ultimas-noticias img#botao {
+    position: absolute;
+    padding-left: 28.3%;
+    top: 82%;
+}
+
+.oqueacontece  img#botao {
+    padding-left: 88%;
+}
+
+.oqueacontece a {
+    color: #212121;
+    font-size: 21px;
+    font-family: Gotham;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+div.content-category form div{
+	margin :3px;
+}
+
+dt.article-info-term{
+	display:none;
+}
+
+div.moduletable h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+p.ultimas_noticias {
+	display:none;
+}
+
+span.mod-articles-category-date{
+	margin-top: 3px;
+	color: white;
+    display: inline;
+    float: left;
+    font-size: 12px;
+	vertical-align: middle;
+	
+}
+
+ul.category-module > li {
+	margin:10px 0 0 15px;
+}
+
+.conteudo-interno ul {
+  list-style: none;
+	margin-top: 15px;
+}
+
+
+li.next , li.previous{
+    text-align: center;
+	display: none;
+	font-weight: bold;
+}
+
+li.next:hover  {
+	color: #5B83CB;
+}
+
+li.previous:hover {
+	color: #5B83CB;
+}
+
+p.data_noticia {
+    color: #457BBB;
+    font-weight: bold;
+    display: inline;
+    float: left;
+    font-size: 15px;
+    vertical-align: middle;
+    padding-top: 7px;
+    font-family: Gotham;
+}
+
+span.btn > a {
+    color: #666666;
+    display: inline;
+    font-size: 15px;
+}
+
+div.noticia br {
+    display: none;
+}
+
+
+div.content-category p.counter.pull-right {
+    display:none;
+}
+
+/* Fim Notícias */
+
+
+
+/* Galeria */
+
+.jg_catelem_txt b {
+    display: none;
+}
+
+
+div.gallery div.pagination:nth-child(6) {
+    display: none;
+}
+
+a.jg_pathitem {
+  font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+a.path{
+	color:#593741;
+	font-size: 13px;
+}
+.jg_pathway {
+    font-size: 13px;
+	text-align:right;
+	margin-bottom: 10px;
+}
+
+.jg_pathway_1{
+    font-size: 13px;
+    text-align: right;
+    float: right;
+    margin-top: 10px;
+	display:inline;
+}
+
+.jg_pathway a img {
+    display: none;
+}
+
+h1.titulo-galeria {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: left;
+    font-family: arial;
+	display:inline;
+
+}
+
+
+li.pagination-end a.hasTooltip.pagenav , li.pagination-end span.pagenav{
+    border-radius: 0px 4px 4px 0px;
+}
+
+div.gallery nth-child(6)
+
+.pagination ul > li:last-child > a, .pagination ul > li:last-child > span {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.pagination ul > li:first-child > a, .pagination ul > li:first-child > span {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-left-width: 1px;
+}
+
+.pagination ul > li > a:hover {
+  color: #5B83CB;
+}
+
+.pagination ul > li > a {
+  font-weight: bold;
+  font-family: arial, 'qlassik_boldregular', sans-serif; 
+  color: #333;
+}
+
+div.pagination{
+	display: inline-block;
+	left: 30%;
+    position: relative;
+	border-radius: 4px;
+}
+
+.pagination ul > li {
+  display: inline;
+}
+
+.pagination ul > li > a, .pagination ul > li > span {
+  display: inline-block;
+  float: left;
+  font-size:13px;
+  padding: 4px 12px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #DFE2EB;
+  border: 1px solid #5A5656;
+  border-left-width: 0;
+}
+
+div.jg-header{
+    font-family: Gotham;
+    font-size: 45px;
+    color:black;
+}
+
+
+div.jg_feed_icon{
+	display:none;
+}
+
+div.jg_catorderlist{
+	display:none;
+}
+
+div.jg_bbcode{
+	display:none;
+}
+
+div.jg_voting{
+	display:none;
+}
+
+div.jg_search {
+	display:none;
+}
+
+div.jg_toplist {
+	display:none;
+}
+
+fieldset.filters.btn-toolbar.clearfix {
+    display: none;
+}
+/* Galeria Fim */
+
+
+input.button {
+    position: relative;
+    float: right;
+    height: 28px;
+    top: 3px;
+    right: 15px;
+}
+
+.item-page div p, .item-page div li{
+	font-size: 18px !important;
+	list-style: initial;
+    list-style-position: inside;
+}
+
+.item-page div ol li {
+    list-style-type: lower-alpha;
+	padding-left: 30px;
+}
+
+.jg_element_gal{
+	padding-left:15px;
+}
+
+/* iCalendar */
+
+ h2.ic-header-title, span.ic-subtitle-string, .ic-cat, div#ic-list-of-dates h3, .conteudo-interno h3  {
+    display: none;
+}
+
+.title-cat.ic-title-cat.ic-float-right {
+    display: none;
+}
+
+/* iCalendar Fim */
+
+.container_12 .grid_4 {
+    width: auto;
+}
+
+#menu_topo > ul > li > a {
+ color: #1163AE;
+}
+#menu_topo ul ul a {
+ color: #1163AE;
+}
+
+#menu_topo li > a:hover,
+#menu_topo ul li:hover > a {
+ color: #00AFEF;
+ text-decoration: none;
+}
+#menu_topo li > a:active,
+#menu_topo ul li:active > a {
+ color: #00AFEF;
+ text-decoration: none;
+}
+/*#menu_topo > div > div > ul > li > ul {
+    background: rgb(18,99,174);
+    font-size: 9px;
+    display: none;
+    margin-top: -20px;
+    margin-bottom: -30px;
+    border: 0px;
+    width: 90px;
+    height: 25px;
+    z-index: 2000;
+    }*/
+    #menu_topo > div > div > ul > li > ul {
+      background: rgb(18,99,174);
+      font-size: 9px;
+      display: none;
+      margin-top: -20px;
+      margin-bottom: -30px;
+      border: 0px;
+      position: absolute;
+      /*width: 235px;*/
+      z-index: 2000;
+    }
+    #menu_topo > div > div > ul > li > ul > li > ul {
+     position: absolute;
+     left: 235px;
+     top: 0;
+     background: rgba(0,0,0, 0.8);
+     display: none;
+     height: auto;
+     padding: 0px;
+     margin: 0px;
+     border: 0px;
+     /*width: 235px;*/
+     z-index: 2000;
+   }
+   #menu_topo > div > div > ul > li:hover > ul,
+   #menu_topo > div > div > ul > li > ul > li:hover > ul {
+     display: block;
+   }
+/*
+#menu_topo li li {
+    background: rgb(18,99,174);
+    display: block;
+    float: none;
+    margin: 0px;
+    color: white;
+    width: 90px;
+    height: 25px;
+    z-index: 9000;
+}
+*/
+#menu_topo li li {
+  background: rgba(29,56,102, 0.95);
+  display: block;
+  float: none;
+  margin: 0px;
+  color: white;
+  /*width: 113px;*/
+  z-index:9000;
+}
+#menu_topo li li:hover {
+  background: rgb(165,170,180);
+  display: block;
+  float: none;
+  margin: 0px;
+  color: white;
+  /*width: 113px;*/
+  z-index:9000;
+}
+#menu_topo li:hover li a {
+ background: none;
+
+}
+#menu_topo li ul a {
+  display: block;
+  height: auto;
+  font-style: normal;
+  margin: 0px;
+  padding: 1px 6px 0px 6px;
+  text-align: left;
+  color: white;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: left;
+}
+/*
+#menu_topo li ul a:hover,
+#menu_topo li ul li:hover > a {
+    border: 0px;
+  color: #ffffff;
+  padding: 1px 6px 0px 6px;
+  background-color:rgba(0,0,0, 0.4);
+  width: 78px;
+    height: 25px;
+    }*/
+    #menu_topo li ul a:hover,
+    #menu_topo li ul li:hover > a {
+      padding: 1px 6px 0px 6px;
+      background-color:rgba(0,0,0, -0.6);
+      border: 0px;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    #menu_topo p {
+     clear: left;
+   }
+
+   #menu_topo li ul {
+  /*width: 235px;*/
+  color: rgb(29,56,103);
+  display: none;
+  position: absolute;
+}
+
+#menu_topo li ul:hover {
+  /*width: 235px;*/
+  color: rgb(165,170,180);
+}
+
+
+#menu_topo li:hover ul {
+  display: block;
+  padding:0;
+}
+
+#menu_topo li li a,
+#menu_topo li li a:hover{
+  text-indent: 0;
+  padding-top: 15px !important;
+  padding-bottom:10px !important;
+
+}
+
+/* Pipoco / Fuzue / Furdunço */
+/*#icagenda-list .event:nth-child(3) .ic-date,
+#icagenda-list .event:nth-child(3) .ic-next-date,
+#icagenda-list .event:nth-child(4) .ic-date,
+#icagenda-list .event:nth-child(4) .ic-next-date,
+#icagenda-list .event:nth-child(5) .ic-date,
+#icagenda-list .event:nth-child(5) .ic-next-date{  
+  display:none!important;
+}*/
+
+.fuzue-pre-carnaval-de-salvador .ic-date,
+.fuzue-pre-carnaval-de-salvador .ic-next-date,
+.fuzue-pre-carnaval-de-salvador #inner-banner p,
+.furdunco-pre-carnaval-de-salvador .ic-date,
+.furdunco-pre-carnaval-de-salvador .ic-next-date,
+.furdunco-pre-carnaval-de-salvador #inner-banner p,
+/*.pipoco .ic-date,*/
+/*.pipoco .ic-next-date,*/
+/*.pipoco #inner-banner p*/
+{
+  display:none!important;
+}
+
+.oqueacontece .fn_static_1{
+  width:33%!important;
+}

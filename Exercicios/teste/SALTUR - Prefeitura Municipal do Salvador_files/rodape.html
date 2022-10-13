@@ -1,0 +1,408 @@
+
+<!-- saved from url=(0048)http://www.salvador.ba.gov.br/Rodape/rodape.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+				
+
+		<title>Salvador</title>
+		
+		<!-- Carregando a fonte Lato -->
+		<link href="./css" rel="stylesheet" type="text/css">	
+		<!--link href="css/index.css" rel="stylesheet" type="text/css" /-->		
+		<link href="./alteracao_12062013(1).css" rel="stylesheet" type="text/css">
+		<!--[if IE]>			
+			<link rel="stylesheet" type="text/css" href="/_catalogs/masterpage/alteracao_12062013-ie.css" />
+		<![endif]-->
+
+	</head>
+	<body>
+		<div style="margin:auto; padding:5px 0; background:#F3F3F4; border-top:1px solid #97999C;"><div style="width:960px; margin:auto;"><a href="http://tecnologia.salvador.ba.gov.br/" target="_blank"><img src="./marca-rodape.png" style="width:450px;"></a></div></div>
+		<div id="rodapeTop" class="blueDots rodape">
+		<div class="rodape_">
+			<div class="rodape_esquerda">
+			
+				<ul class="white-menu-rodape font-bold">
+					<li><a target="_blank" href="http://www.salvador.ba.gov.br/index.php?option=com_content&amp;view=article&amp;id=10&amp;catid=8&amp;Itemid=101">PREFEITURA</a></li>
+					<li><a target="_blank" href="http://www.comunicacao.salvador.ba.gov.br/index.php/mais-noticias">nOTÍCIAS</a></li>					
+				</ul>
+				<div class="separador"></div>
+				<div class="social-links float-left font-bold">
+					<span>Siga a Prefeitura:</span>
+					<ul>
+						<li class="facebook"><a href="https://www.facebook.com/pages/Prefeitura-de-Salvador/472097156139269" target="_blank">Facebook</a></li>
+						<li class="youtube"><a href="http://www.youtube.com/prefeituradosalvador" target="_blank">YouTube</a></li>
+						<li class="flickr"><a href="http://www.flickr.com/photos/prefeituradesalvador" target="_blank">Flickr</a></li>
+						<li class="twitter"><a href="https://twitter.com/PrefSalvador" target="_blank">Twitter</a></li> 
+					</ul>
+				</div>
+			</div>
+
+			<div class="rodape_centro">
+				<ul class="white-menu-rodape">
+					<li class="font-bold">Diário Oficial</li>
+					<li class="white-menu-small">Informações Institucionais de tudo que acontece na prefeitura.</li>
+				</ul>
+				<a href="http://www.dom.salvador.ba.gov.br/diario-atual.php" class="botaoAcesse" target="_blank">Acesse Já!</a>
+				<div class="separador" style="margin-top:10px;"></div>
+				<div><a href="http://www.dom.salvador.ba.gov.br/" target="_blank"><img src="./edicoesAnteriores.jpg" class="botaoEdicoes"></a></div>
+			</div>
+
+			<div class="rodape_direita">
+				
+				<div class="logoMini"></div>  
+			</div>
+		</div>
+	</div>
+
+	<div id="rodapeBotton" class="blueSea rodape"> 
+		<div class="rodape_">
+			<div id="copyright" class="white-menu-smallx font-bold">
+				<span class="nome-sub-site" id="nome-sub-site" style="font-size:14px;">© 2019 - SALTUR - Empresa Salvador Turismo</span><br>
+				<span class="endereco-prefeitura" id="endereco-prefeitura">R. da Argentina, 341 - Comercio, Salvador - BA, 40015-130  Telefone: (71) 3202-7600</span>				
+			</div>
+			<!-- <div class="subMenuRodape">
+				<ul class="white-menu white-menu-smallx font-bold">
+					<li>
+						<a href="http://www.salvador.ba.gov.br/Paginas/FaleConosco.aspx" target="_blank">FALE CONOSCO</a> 
+					</li> 
+					<li>
+						<a href="/Paginas/mapasite.aspx" target="_blank">MAPA DO SITE</a>
+					</li>
+					<li class="last" width="155px;">
+						<a href="/Paginas/politica.aspx" target="_blank">POL&Iacute;TICA DE PRIVACIDADE</a>
+						<a href="http://www.cogel.salvador.ba.gov.br" target="_blank" title="Cogel"> COGEL </a>
+					</li>
+				</ul>
+			</div> -->
+		</div>
+	</div>
+	<!--script language="javascript" src="/_catalogs/masterpage/index.js" type="text/javascript"></script-->
+	
+	<script language="javascript" type="text/javascript">
+
+	//alert(document.getElementById("endereco-prefeitura").innerHTML);
+
+	inserirEnderecoPaginaInterna();
+  	 
+
+			function inserirEnderecoPaginaInterna()
+			{
+				var url = (window.location != window.parent.location) ? document.referrer : document.location;
+				var home = url.replace( /\.salvador\.ba\.gov\.br.*/, ".salvador.ba.gov.br" );
+					
+				url = url.replace( "http://www.", "" );
+				url = url.replace( "http://", "" );
+				url = url.replace( /\.salvador\.ba\.gov\.br.*/, "" );
+				url = url.replace( ".homologa", "" );						
+				var end = getEnderecoByName( url );
+
+                //alert(end.url);
+
+				document.getElementById("nome-sub-site").innerHTML = end.nome;		
+				document.getElementById("endereco-prefeitura").innerHTML = end.url;
+								
+			}
+
+			function getEnderecoByName( name )
+			{
+
+				//alert(name);
+
+				var urls = { 
+				"agecom" 	: {
+				nome: "&copy; 2019 - SECOM - SECRETARIA DE COMUNICA&Ccedil;&Atilde;O",
+				url: "Pra&ccedil;a Municipal s/n - Pal&aacute;cio Thom&eacute; de Souza - Centro | Telefone: 3202-6000"		
+				},
+				"secom" 	: {
+				nome: "&copy; 2019 - SECOM - SECRETARIA DE COMUNICA&Ccedil;&Atilde;O",
+				url: "Pra&ccedil;a Municipal s/n - Pal&aacute;cio Thom&eacute; de Souza - Centro | Telefone: 3202-6000"		
+				},	
+				"comunicacao" 	: {
+				nome: "&copy; 2019 - SECOM - SECRETARIA DE COMUNICA&Ccedil;&Atilde;O",
+				url: "Pra&ccedil;a Municipal s/n - Pal&aacute;cio Thom&eacute; de Souza - Centro | Telefone: 3202-6000"		
+				},
+							
+				"cultura" : {
+				nome: "&copy; 2019 - FGM - FUNDA&Ccedil;&Atilde;O GREG&Oacute;RIO DE MATTOS ",
+				url: "Rua Chile, 31 - Centro Salvador/Bahia | Telefone: 3202-7800"			
+				},		
+							
+				"culturafgm" : {
+				nome: "&copy; 2019 - FGM - FUNDA&Ccedil;&Atilde;O GREG&Oacute;RIO DE MATTOS ",
+				url: "Rua Chile, 31 - Centro, Salvador-Bahia | Telefone: 3202-7800"			
+				},	
+				"novofgm" : {
+				nome: "&copy; 2019 - FGM - FUNDA&Ccedil;&Atilde;O GREG&Oacute;RIO DE MATTOS ",
+				url: "Rua Chile, 31 - Centro, Salvador-Bahia | Telefone: 3202-7800"			
+				},				
+		
+				"transalvador" : {
+				nome: "&copy; 2019 - TRANSALVADOR - SUPERINTEND&Ecirc;NCIA DE TR&Acirc;NSITO DO SALVADOR",
+				url: "Av. Vale dos Barris, 501 - Barris - Salvador - Bahia"			
+				},
+				
+				"defesacivil": {
+				nome: "&copy; 2019 - DEFESA CIVIL",
+				url: "Rua M&aacute;rio Leal Ferreira, 80 - Bonoc&ocirc; CEP: 40.285-280 | Telefone: (71) 3176-8600"
+				},
+				
+				"desenvolvimentourbano":{
+				nome: "&copy; 2019 - SEMUT - SECRETARIA MUNICIPAL DE URBANISMO E TRANSPORTE",
+				url: "Rua Agnelo de Brito,  201 - Federa&ccedil;&atilde;o CEP: 40.245-210 | Telefone: 2105-2900/2902"
+				},
+												
+				"gestaopublica":{
+				nome: "&copy; 2019 - SEMGE - SECRETARIA MUNICIPAL DE GEST&Atilde;O",
+				url: "Vale dos Barris, 125 - CEP 40.080-190 | Telefone 71-3202-4103/4038 | Fax: 71-3202-4168 | Hor&aacute;rio de expediente: 8h &agrave;s 17h"
+				},		
+				"compras":{
+				nome: "&copy; 2019 - SEMGE - SECRETARIA MUNICIPAL DE GEST&Atilde;O",
+				url: "Vale dos Barris, 125 - CEP 40.080-190 | Telefone 71-3202-4103/4038 | Fax: 71-3202-4168 | Hor&aacute;rio de expediente: 8h &agrave;s 17h"
+				},		
+
+	
+				"infraestrutura":{
+				nome: "&copy; 2019 - SEINFRA - SECRETARIA MUNICIPAL DE INFRAESTRUTURA E OBRAS P&Uacute;BLICAS",
+				url: " Av. Vale dos Barris, 125 - Barris | Telefone: 71-3202-4600"
+				},
+				
+				"meioambiente":{
+				nome: "&copy; 2019 - SECIS - SECRETARIA CIDADE SUSTENT&Aacute;VEL",
+				url: " Rua da Gr&eacute;cia, n 19, Com&eacute;rcio, Telefone: 3186-1501"
+				},				
+				
+				"reparacao":{
+				nome: "&copy; 2019 - SEMUR - SECRETARIA MUNICIPAL DA REPARA&Ccedil;&Atilde;O",
+				//url: " Rua do Tesouro s/n Edif&iacute;cio Nossa Senhora da Ajuda, 6ï¿½ andar - Centro Telefone: (71) 4009-2612 / 2616 "
+				url: " Rua do Tesouro s/n Edif&iacute;cio Nossa Senhora da Ajuda, 6o andar - Centro Telefone: (71) 3202-2600 "
+				},
+
+				"segurancaurbana":{
+				nome: "&copy; 2019 - SUSPREV - SUPERINTEND&Ecirc;NCIA DE SEGURAN&Ccedil;A URBANA E PREVEN&Ccedil;&Atilde;O &Agrave; VIOL&Ecirc;NCIA",
+				url: "Telefone: 3183-8300/8312"
+				},
+
+				"ordempublica":{
+				nome: "&copy; 2019 - SEMOP - SECRETARIA MUNICIPAL DE ORDEM P&Uacute;BLICA",
+				//url: " Rua 28 de setembro, s/n - Baixa dos Sapateiros Telefone: 3186-5002 / 5003"
+				url: "Avenida Cardeal Avelar Brandao Vilela N 2562, Mata Escura. CEP:41.225-190, Telefone: 3202-5400."
+				},
+				"limpurb":{
+				nome: "&copy; 2019 - LIMPURB - EMPRESA DE LIMPEZA URBANA DO SALVADOR",
+				url: "Rodovia BR-324, Km 618, S/N, Porto Seco Piraj&aacute;, CEP: 41.233-030, Telefone: 3202-5000"
+				},
+								
+				"tecnologia":{
+				nome: "&copy; 2019 - COGEL - COMPANHIA DE GOVERNAN&Ccedil;A ELETR&Ocirc;NICA DO SALVADOR",
+				url: "Rua Macap&aacute;, 271, Ondina - Salvador/BA, CEP: 40.170-150 Telefone: 3202-4200" 
+				},
+				"cogel":{
+				nome: "&copy; 2019 - COGEL - COMPANHIA DE GOVERNAN&Ccedil;A ELETR&Ocirc;NICA DO SALVADOR",
+				url: "Rua Macap&aacute;, 271, Ondina - Salvador/BA, CEP: 40.170-150 Telefone: 3202-4200" 
+				},
+				"tecnologiaintranet":{
+				nome: "&copy; 2019 - COGEL - COMPANHIA DE GOVERNAN&Ccedil;A ELETR&Ocirc;NICA DO SALVADOR",
+				url: "Rua Macap&aacute;, 271, Ondina - Salvador/BA, CEP: 40.170-150 Telefone: 3202-4200" 
+				},
+				
+				"capoeiraviva":{
+				nome: "&copy; 2019 - FGM - FUNDA&Ccedil;&Atilde;O GREG&Oacute;RIO DE MATTOS",
+				url: "Rua Chile, 31 - Centro Salvador/Bahia Telefone: 3202-7800"
+				},
+				
+				"sustentabilidade":{
+				nome: "&copy; 2019 - SECIS - SECRETARIA CIDADE SUSTENT&Aacute;VEL",
+				url: "Rua da Gr&eacute;cia, 19, Com&eacute;rcio, Telefone: 3202-5630"
+				},
+				
+				"observatorio":{
+				nome: "&copy; 2019 - SECIS - SECRETARIA CIDADE SUSTENT&Aacute;VEL",
+				url: "Ladeira de S&atilde;o Bento, 89 - Edf. Oxumar&eacute;, sala 301 - Centro, Telefone: 3202-5630"
+				},
+
+				"fundacaocidademae":{
+				nome: "&copy; 2019 - FCM - FUNDA&Ccedil;&Atilde;O CIDADE M&Atilde;E",
+				url: "Rua Professor Alo&iacute;sio, 219 - Engelho Velho de Brotas, CEP: 40.243-620 Tel.: 3202-2400 - Salvador - Ba"
+				//url: "Rua Professor Alo&iacute;sio, 219 ï¿½ Engelho Velho de Brotas, CEP: 40.243-620, Fax: 3202-9820, Tel.: 3202-9803/9804 ï¿½ Salvador ï¿½ Ba"
+				},
+
+				"fcm":{
+				nome: "&copy; 2019 - FCM - FUNDA&Ccedil;&Atilde;O CIDADE M&Atilde;E",
+				url: "Rua Professor Alo&iacute;sio de Carvalho Filho, 219 - Engelho Velho de Brotas, CEP: 40.243-620 Tel.: (71) 3202-2400 - Salvador - Ba"
+				//url: "Rua Professor Alo&iacute;sio, 219 ï¿½ Engelho Velho de Brotas, CEP: 40.243-620, Fax: 3202-9820, Tel.: 3202-9803/9804 ï¿½ Salvador ï¿½ Ba"
+				},
+
+				"pgms":{
+				nome: "&copy; 2019 - PGMS - PROCURADORIA GERAL DO MUNIC\u00cdPIO DO SALVADOR",
+				url: "Travessa da Ajuda, 002, Edf. Sul Am\u00e9rica, Centro, Salvador, BA CEP: 40.020-030, Telefone: 71 3202-6300"
+				},
+				
+				"spm":{
+				nome: "&copy; 2019 - SPMJ - SECRETARIA DE POL&Iacute;TICAS PARA MULHERES, INFANCIA E JUVENTUDE",
+				url: "Avenida Estados Unidos,  397 - Edf. Cidade do Salvador, 5o andar - Comercio. CEP: 40.010-020 +55 (71) 3202-7300 "
+				},
+
+				"spmj":{
+				nome: "&copy; 2019 - SPMJ - SECRETARIA DE POL&Iacute;TICAS PARA MULHERES, INFANCIA E JUVENTUDE",
+				url: "Avenida Estados Unidos, 397 - Edf. Cidade do Salvador, 5o andar - Com&eacute;rcio. CEP: 40.010-020 +55 (71) 3202-7300 "
+				},
+				
+				"guardamunicipal":{
+				nome: "&copy; 2019 - GCMS - GUARDA CIVIL MUNICIPAL DO SALVADOR",
+				url: "Avenida General San Martin, 734, Fazenda Grande do Retiro, Salvador-BA, CEP: 40355-015, Telefonia(Central) (71) 3202-5312, Fax.: 3202-5311"
+				},
+
+				"fmlf":{
+				nome: "&copy; 2021 - FMLF - FUNDA&Ccedil;&Atilde;O M&Aacute;RIO LEAL FERREIRA",
+				url: "Rua da Belgica, 74. Condominio Edificio Roosevelt - Comercio, Salvador, BA, CEP: 40010-030, Telefone: 71 3202-9803/9809"
+				},
+				
+				"semps":{
+				nome: "&copy; 2019 - SEMPRE - Secretaria Municipal de Promo&ccedil;ao Social e Combate a Pobreza",
+				url: "Avenida Estados Unidos, 50, Edif&iacute;cio Sesquicenten&aacute;rio, 6o e 7o andar, Salvador - Bahia, CEP: 40010-020, Telefone: (71) 3202-2300 "
+				},
+				
+				"sucop":{
+				nome: "&copy; 2019 - SUCOP - SUPERINTEND&Ecirc;NCIA DE OBRAS P&Uacute;BLICAS DO SALVADOR",
+				url: "Avenida Presidente Castelo Branco, 1660, Santo Antonio - Salvador/BA, CEP 40045-050  Telefone: (71) 3202-4300 "
+				},
+				
+				"arsal":{
+				nome: "&copy; 2019 - ARSAL - AG&Ecirc;NCIA REGULADORA E FISCALIZADORA DOS SERVI&Ccedil;OS P&uacute;BLICOS DO SALVADOR",
+				url: "Av. Antonio Carlos Magalhaes, 3244. Ed. Thom&eacute; de Souza, 7o andar, sala 719 - Caminho das &aacute;rvores.  Salvador - BA, Brasil - CEP 41820-000  Telefone: (71) 3202-8800 "
+				},
+				
+				"semob":{
+				nome: "&copy; 2019 - SEMOB - SECRETARIA DE MOBILIDADE",
+				url: "Rua Visconde de Itabora&iacute;, 99 - Amaralina.   Salvador - BA , Brasil - CEP 41900-000  Telefone: (71) 3202-9203 "
+				},
+				
+				"mobilidade":{
+				nome: "&copy; 2019 - SEMOB - SECRETARIA DE MOBILIDADE",
+				url: "Rua Visconde de Itabora&iacute;, N 99 - Amaralina.   Salvador - BA , Brasil - CEP 41900-000  Telefone: (71) 3202-9200 "
+				},
+				
+				"codesal":{
+				nome: "&copy; CODESAL - Defesa Civil do Salvador",
+				url: "Avenida M&aacute;rio Leal Ferreira, S/N - Bonoc&ocirc;.  Salvador - BA , Brasil - CEP 40285-280  Telefone: (71) 3202-4500"
+				},
+				
+				"turismo":{
+				nome: "&copy; 2019 - SALTUR - Empresa Salvador Turismo",
+				url: "R. da Argentina, 341 - Comercio, Salvador - BA, 40015-130  Telefone: (71) 3202-7600" 
+				},
+				
+				"saltur":{
+				nome: "&copy; 2019 - SALTUR - Empresa Salvador Turismo",
+				url: "R. da Argentina, 341 - Comercio, Salvador - BA, 40015-130  Telefone: (71) 3202-7600" 
+				},
+				
+				"novosindec":{
+				nome: "&copy; 2019 - SEINFRA - SECRETARIA MUNICIPAL DE INFRAESTRUTURA E OBRAS P&uacute;BLICAS",
+				url: "Vale dos Barris, 125 - Barris. Salvador - BA , Brasil - CEP 40.080-190 | Telefone 71-3202-4600 | Hor&aacute;rio de expediente: 8h &agrave;s 17h" 
+				},
+
+				"seinfra":{
+				nome: "&copy; 2019 - SEINFRA - SECRETARIA MUNICIPAL DE INFRAESTRUTURA E OBRAS P&Uacute;BLICAS",
+				url: "Edif&iacute;cio Roosevelt na Rua da B&eacute;lgica, 2 - Com&eacute;rcio CEP 40010-030 | Telefone 71-3202-4600 |Hor&aacute;rio de Funcionamento: Segunda &agrave; Sexta-feira, das 08:00h &agrave;s 12:00h e 13:00h &agrave;s 17:00h" 
+				},
+
+				"sindec":{
+				nome: "&copy; 2019 - SEINFRA - SECRETARIA MUNICIPAL DE INFRAESTRUTURA E OBRAS P&Uacute;BLICAS",
+				url: "Av. Vale dos Barris, 125 - Barris, Salvador - Bahia , Brasil - CEP 40.080-190 | Telefone 71-3202-4600 |Hor&aacute;rio de Funcionamento: Segunda &agrave; Sexta-feira, das 08:00h &agrave;s 12:00h e 13:00h &agrave;s 17:00h"  
+				},
+
+				"casavida":{
+				nome: "&copy; 2019 - SEINFRA - SECRETARIA MUNICIPAL DE INFRAESTRUTURA E OBRAS P&Uacute;BLICAS",
+				url: "Vale dos Barris, 125 - Barris. Salvador - BA , Brasil - CEP 40.080-190 | Telefone 71-3202-4600 | Hor&aacute;rio de expediente: 8h &agrave;s 17h" 
+				},
+
+				"casacivil":{
+				nome: "&copy; 2019 - CASA CIVIL",
+				url: "Av. ACM, Edf Tom&eacute; de Souza, 3244, sala 1009. Salvador - BA , Brasil - CEP 41820-000 | Telefone 71-3202-7400 " 
+				},
+
+				"prefeiturabairro":{
+				nome: "&copy; 2019 - PREFEITURA BAIRRO",
+				url: "Rua Chile, 3, Edf. Santa Casa da Miseric&oacute;rdia, 2o andar Centro. Salvador - BA , Brasil - CEP 40020-130 | Telefone 71-3202-7050" 
+				},
+
+				"ouvindonossobairro":{
+				nome: "&copy; 2019 - PREFEITURA BAIRRO",
+				url: "Rua Chile, 3, Edf. Santa Casa da Miseric&oacute;rdia, 2o andar Centro. Salvador - BA , Brasil - CEP 40020-130 | Telefone 71-3202-7050" 
+				},
+
+				"desal":{
+				nome: "&copy; 2019 - Companhia de Desenvolvimento Urbano de Salvador",
+				url: "BR 324, Km 8,5 - Porto Seco Piraj&aacute; CEP: 41 233-030 | Telefone 71-3202-4807" 
+				},
+				"fumpres":{
+				nome: "&copy; 2019 - FUMPRES - Fundo Municipal de Previd&ecirc;ncia do Servidor",
+				url: "Avenida Joana Ang&eacute;lica, 399, Nazar&eacute; - Salvador- Bahia - CEP 40.050-001 | Telefone 71 3202 3400" 
+				},
+				"previdencia":{	
+				nome: "&copy; 2019 - FUMPRES - Fundo Municipal de Previd&ecirc;ncia do Servidor",
+				url: "Avenida Joana Ang&eacute;lica, 399, Nazar&eacute; - Salvador- Bahia - CEP 40.050-001 | Telefone 71 3202 3400" 
+				},
+
+				"sempre":{
+				nome: "&copy; 2019 - SEMPRE - Secretaria Municipal de Promo&ccedil;&atilde;o Social e Combate &agrave; Pobreza ",
+				url: " Avenida Estados Unidos, 50, Edif&iacute;cio Sesquicenten&aacute;rio, 6o e 7o andar - Salvador - Bahia | Telefone 71 3202-2300" 
+				},
+
+				"cmdca":{
+				nome: "&copy; 2019 - CMDCA - Conselho Municipal dos Direitos da Crian&ccedil;a e do Adolescente do Munic&iacute;pio de Salvador",
+				url: "Rua Eng. Silva Lima s/n (rua transversal da Av Joana Ang&eacute;lica, lateral esquerda do pr&eacute;dio da PREVIS - antigo IPS) - Nazar&eacute;, Salvador - BA, 40301-110. | Telefone 71 3202-7316" 
+				},
+
+				"codecon9":{
+				nome: "&copy; 2020 - CODECON - Diretoria de A&ccedil;&otilde;es de Prote&ccedil;&atilde;o e Defesa do Consumidor",
+				url: "Rua Chile, n 3, Edf. Santa Casa da Miseric&oacute;rdia, 1o Andar, Centro. Salvador - BA, Brasil - CEP 40020-000 | Telefone: 71-3202-6270" 
+				},
+				"codecon":{
+				nome: "&copy; 2020 - CODECON - Diretoria de A&ccedil;&otilde;es de Prote&ccedil;&atilde;o e Defesa do Consumidor",
+				url: "Rua Chile, n 3, Edf. Santa Casa da Miseric&oacute;rdia, 1o Andar, Centro. Salvador - BA, Brasil - CEP 40020-000 | Telefone: 71-3202-6270" 
+				},
+				"semge":{
+				nome:"&copy; 2021 - Secretaria Municipal de Gest&atilde;o - SEMGE",
+				url:"Rua Hor&aacute;cio C&eacute;sar, n&uacute;mero 64, 2 de Julho - Centro. CEP 40.060-350 | Telefone: 3202-4015" 
+				},
+				"gestaopublica":{
+				nome:"&copy; 2021 - Secretaria Municipal de Gest&atilde;o - SEMGE",
+				url:"Rua Hor&aacute;cio C&eacute;sar, n&uacute;mero 64, 2 de Julho - Centro. CEP 40.060-350 | Telefone: 3202-4015" 
+				},
+
+				
+				
+			};
+	
+			for ( var i in urls )
+			{
+				if ( i == name )
+				{
+					return urls[i];
+				}
+			}
+	
+	// Caso nï¿½o tenha encontrado o endereï¿½o, retorne-o.
+			return {
+			nome:"&copy; 2019 - PREFEITURA MUNICIPAL DO SALVADOR",
+			url:"Pra&ccedil;a Municipal, s/n - Pal&aacute;cio Thom&eacute; de Souza - Centro | Telefone: 3202-6000" };
+			}
+
+
+			function urlExists( url )
+			{
+				var http = new XMLHttpRequest();
+    			http.open('HEAD', url, false);
+    			http.send();
+    			return ( http.status != 404 );
+			}		
+
+	</script>
+	
+			
+
+
+
+</body></html>
