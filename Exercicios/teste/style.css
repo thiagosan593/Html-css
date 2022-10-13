@@ -2,7 +2,7 @@
     color: white;
         
 }
-div{
+nav{
     background-color: #0c4e80;
     padding-top: 4px;
     padding-right: 4px;
@@ -13,12 +13,16 @@ a{
      font-size: auto;
     color: white;
     text-decoration: none;
-    padding-top: 4px;
-    padding-right: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    text-justify: auto;
 }
 a:hover{
     color: aqua;
 }
 
+iframe{
+   margin-top: center;
+}

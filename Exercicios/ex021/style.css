@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(81, 87, 87);
+    margin: 0px;
+}
+header{
+    width: auto;
+    background-color: beige;
+    padding: 10px;
+    margin: 10px;
+    
+}
+nav{
+    background-color: rgb(85, 84, 83);
+       padding: 3px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav >a:hover{
+    text-decoration:underline;
+    color: darkblue;
+}
+main{
+    background-color:beige;
+    padding: 10px;
+    margin: 10px;
+}
+footer{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+article{
+    background-color:lightgray ;
+}
+article >aside{
+    background-color: rgba(211, 211, 211, 0.493);
+}
