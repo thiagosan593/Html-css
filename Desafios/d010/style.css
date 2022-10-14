@@ -7,42 +7,54 @@
 }
 body{
   background-color: #84E1AD;
+  margin: auto;
+  
 }
 header{
-   background-image: linear-gradient(#37C475,#0f723a) ;
+   background-image: linear-gradient(#37C475,#0a4724) ;
    text-align: center;
    padding: 8px ;
    margin: 0px;
-}
-nav{
-    text-align: left;
-    margin: 5px;
-    padding: 4px;
-    border: 12px;
 }
 main{
 background-color: white;
 margin: 60px;
 }
+
+h1.titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: white;
+}
 h1{
+  
     font-family: 'indroid';
     text-indent: 8px;
-    color: #37C475;
+    color: #0f723a;
+     padding: 10px;
+     margin: 5px;
  
 }
-h1.head{
-    color: wheat;
+
+p.titulo{
+    text-align: center;
+    margin-top: 3px;
+    color: white;
 }
+
+
 h2{
+    background-image: linear-gradient(to right,#1fc567,white);
     font-family: 'indroid';
+    text-indent: 6px;
     text-indent: 20px;
-    color: #37C475;
+    color:#246e44;
+    margin: 10px 10px 10px 25px;
    
 }
 p{ 
     text-indent: 20px;
-    text-align: justify;
-    margin: 5px;
+    margin: 6px 10px;
     padding: 6px
 }
 
@@ -50,14 +62,23 @@ footer{
     background-color: #0f723a;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    text-align: center;
     padding: 10px;
-    margin: 0px;
+    margin: auto;
 }
 nav{
-    background-color: rgb(85, 84, 83);
-       padding: 5px;
-       box-shadow: 3px 3px 3px rgba(230, 16, 16, 0.767);
-        
-
     
+    text-align: left;
+    
+}
+a{
+    font-size: large;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+a:active{
+    text-decoration: none;
+    color: #0f723a;
+    background-color: #0f723a;
 }
