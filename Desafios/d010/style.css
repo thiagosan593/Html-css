@@ -1,0 +1,63 @@
+
+@font-face {
+    font-family:'indroid' ;
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  background-color: #84E1AD;
+}
+header{
+   background-image: linear-gradient(#37C475,#0f723a) ;
+   text-align: center;
+   padding: 8px ;
+   margin: 0px;
+}
+nav{
+    text-align: left;
+    margin: 5px;
+    padding: 4px;
+    border: 12px;
+}
+main{
+background-color: white;
+margin: 60px;
+}
+h1{
+    font-family: 'indroid';
+    text-indent: 8px;
+    color: #37C475;
+ 
+}
+h1.head{
+    color: wheat;
+}
+h2{
+    font-family: 'indroid';
+    text-indent: 20px;
+    color: #37C475;
+   
+}
+p{ 
+    text-indent: 20px;
+    text-align: justify;
+    margin: 5px;
+    padding: 6px
+}
+
+footer{
+    background-color: #0f723a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+nav{
+    background-color: rgb(85, 84, 83);
+       padding: 5px;
+       box-shadow: 3px 3px 3px rgba(230, 16, 16, 0.767);
+        
+
+    
+}
