@@ -3,6 +3,7 @@
 
 body{
     color: black;
+    
         
 }
 nav{
@@ -10,6 +11,8 @@ nav{
    padding: 12px;
    font-weight: bolder;
     margin-top: 0px;
+    height: auto;
+    
 }
 a{
      font-size: auto;
@@ -17,13 +20,21 @@ a{
     text-decoration: none;
     padding: 9px;
     text-justify: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a:hover{
-    color: aqua;
+    color:black;
+    background-color: white;
+    border-radius: 8px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+   
 }
 
 iframe{
    margin-top: center;
+  
 }
 
 h1{
