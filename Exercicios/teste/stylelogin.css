@@ -1,49 +1,8 @@
+body {
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+    padding: 0;
 
-body{
-    color: black;
-        
-}
-nav{
-    background-color: #0c4e80;
-   padding: 12px;
-   font-weight: bolder;
-    margin-top: 0px;
-}
-a{
-     font-size: auto;
-    color: white;
-    text-decoration: none;
-    padding: 9px;
-    text-justify: auto;
-}
-a:hover{
-    color: aqua;
-}
-
-iframe{
-   margin-top: center;
-}
-
-h1{
-    font-family:'Dancing Script','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4em;
-    color: black;
-    text-decoration: dotted;
-    text-align: center;
-}
-nav{
-    text-align: center;
-}
-p{
-    text-align: center;
-}
-div.box-parent-login{
-    text-decoration: dashed;
-}
-main{
-    padding: 6px 10px;
+    margin: 0;
 
 }
 
@@ -55,26 +14,27 @@ main{
 
     justify-content: center;
 
-    height: 60vh;
+    height: 100vh;
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+
 .card {
 
-    background-image: linear-gradient(#0c4e80,#1a90eb);
-    padding: 22px 34px;
+    background-image: linear-gradient(#0c4e80,#1375c0);
 
-    border-radius: 6px;
+    padding: 40px;
+
+    border-radius: 2px;
 
     width:280px;
-    margin: 2px;
 
 }
 
 .card-header {
 
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 
     opacity: 0.8;
 
@@ -85,7 +45,9 @@ main{
 .card-header::after {
 
     content: "";
-    width: 20px;
+
+    width: 70px;
+
     height: 1px;
 
     background-color: #fff;
@@ -150,7 +112,7 @@ main{
 
     height: 40px;
 
-    background-color: #a13854;
+    background-color: #cf1a4a;
 
     border:none;
 
@@ -172,11 +134,4 @@ main{
 
     text-decoration: none;
 
-}
-footer{
-    background-color: #0c4e80;
-    padding: 10px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    
 }
