@@ -71,14 +71,24 @@ nav{
     text-align: left;
     
 }
+
 a{
     font-size: large;
     text-decoration: none;
     margin: 10px;
     color: white;
 }
-a:active{
+a:hover{
     text-decoration: none;
-    color: #0f723a;
+    color: white;
     background-color: #0f723a;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 2px;
+}
+.links-ext{
+    background-color: #1fc567;
+}
+.links-ext::after{
+
 }
