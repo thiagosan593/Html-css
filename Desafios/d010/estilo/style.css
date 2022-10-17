@@ -88,7 +88,20 @@ a:hover{
 }
 .links-ext{
     background-color: #1fc567;
+  }
+.video{
+    background-color: #0f723a;
+    margin: 6px;
+    padding: 6px;
+    border: 6px;
+    text-align: center;
 }
-.links-ext::after{
-
+aside{
+    background-color: #3edd83;
+     margin: 10px;
+     border: 10px 10px;
+}
+h3{
+   background-color: #0a4724;
+   color: white;
 }
