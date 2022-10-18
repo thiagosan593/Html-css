@@ -45,20 +45,73 @@ body{
 *Header(Cabeçalho)
 */
 header{
-  background-color: var(--cor4);  
+    /*Preenchimento de fundo gradiente linear  cor 3 e 5*/
+  background-image: linear-gradient(to bottom, var(--cor3) , var(--cor5));
+  min-height: 150px;
+  /* Posição do texto: centro:*/
+  text-align: center;
+  /*Preencimento do  topo*/
+  padding-top: 40px;
 }
 header>h1{
     color: white;
     font-family: var(--fonte-destaque);
+    /*Tamanho a Fonte*/
+    font-size: 3em;
+    /*Margem de baixo*/
+    margin-bottom: 20px;
+    /*Sombra */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267) ;
 }
-head >p{
+/*configuração da tag p do cabecalho*/
+header > p{
+    font-family: var(--fonte-padrao);
+    /* Tamanho da fonte*/
+    font-size: 1.2em;
+    /* Cor da Fonte*/
     color: white;
+    /*largura máxima*/
+    max-width: 500px;
+    /*paddind direito e esquerdo*/
+    padding-right: 10px;
+    padding-left: 10px;
+    /*Posição do Paragrafo*/
+    margin: auto;
+    /*sombra*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267) ;
 }
 /*
 *Nav(Navegação) 
 */
 nav{
     background-color:var(--cor5) ;
+    /*Preenchimento geral*/
+    padding: 10px; 
+    /*sombra*/
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);   
+}
+/*
+*Configuraçãos da tag a dentro de  nav
+*/
+nav >a{
+    color: white;
+    /*preenchimento 4 lados*/
+    padding: 10px;
+    /*decoração do texto = nenhuma*/
+    text-decoration: none;
+    /*peso da Fonte = negrita*/
+    font-weight: bold;
+    /*borda*/
+    border-radius: 5px;
+    /*Transição*/
+    transition-duration: 0.1ms;
+}
+/*Animação ao passar o mouse*/
+nav a:hover{
+    /*cor do fundo da animação*/
+  background-color: var(--cor3);  
+  /*cor da letra*/
+  color: var(--cor5);
 }
 /*
 * Main(Principal)
