@@ -38,6 +38,7 @@
 body{
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
+
 }
 
 /*
@@ -64,6 +65,18 @@ nav{
 */
 main{
     background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    /*Sombra*/
+    box-shadow: 0px 0px 10px black ;
+    /*margem de baixo*/
+    margin-bottom: 30px;
+    /*Borda de baixo*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 }
 main h1{
     color: var(--cor5);
@@ -71,6 +84,21 @@ main h1{
 }
 main h2{
     font-family: var(--font-android);
+}
+
+main img{
+    min-width: 300px;
+    max-width: 1000px;
+     /* Centraliza Imagem*/
+    display: block;
+    margin: auto;
+}
+
+main img.pequena{
+    width: 50%;
+    /* Centraliza Imagem*/
+    display: block;
+    margin: auto;
 }
 /*
 * Footer (Rodapé)
