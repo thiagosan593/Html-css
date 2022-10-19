@@ -24,28 +24,24 @@
 
 }
 
-/*
-*Configuração global
-*/
+/*Configuração global*/
 *{
     margin: 0px;
     padding: 0px;
 }
-
-/*
-* Corpo
-*/
+/*Corpo*/
 body{
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
-
 }
-
-/*
-*Header(Cabeçalho)
-*/
+/*configuração pra links externos*/
+/*coisas depois do link*/
+a.links-ext::after{
+content: '\00A0\1F517';
+}
+/*Header(Cabeçalho)*/
 header{
-    /*Preenchimento de fundo gradiente linear  cor 3 e 5*/
+/*Preenchimento de fundo gradiente linear  cor 3 e 5*/
   background-image: linear-gradient(to bottom, var(--cor3) , var(--cor5));
   min-height: 150px;
   /* Posição do texto: centro:*/
@@ -80,15 +76,14 @@ header > p{
     /*sombra*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267) ;
 }
-/*
-*Nav(Navegação) 
-*/
+/**Nav(Navegação) */
 nav{
     background-color:var(--cor5) ;
     /*Preenchimento geral*/
     padding: 10px; 
     /*sombra*/
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);   
+  
 }
 /*
 *Configuraçãos da tag a dentro de  nav
@@ -131,16 +126,37 @@ main{
     border-bottom-right-radius: 10px;
 
 }
+
+/*Configuração para todos parágrafo dentro do main*/
+main p{
+    /*margem*/
+  margin: 15px 0px ; 
+  /*alinhamento do texto justo*/
+  text-align: justify; 
+  /*Identação*/
+  text-indent: 30px;
+  /*Altura da linha(espaço entre as linhas)*/
+  line-height: 2em;
+  /*tamanho da fonte*/
+  font-size: 1em;
+}
+/*Configuração para todos h1 dentro do main*/
 main h1{
     color: var(--cor5);
+    font-family: var(--font-android);
 
 }
+/*Configuração para todos h2 dentro do main*/
 main h2{
     font-family: var(--font-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image:linear-gradient(to right,var(--cor1), transparent) ;
+    text-indent: 8px;
 }
 
 main img{
-    min-width: 300px;
+    min-width: 150px;
     max-width: 1000px;
      /* Centraliza Imagem*/
     display: block;
@@ -148,15 +164,78 @@ main img{
 }
 
 main img.pequena{
-    width: 50%;
+    /*Largura  Maxima*/
+     max-width: 350px;
     /* Centraliza Imagem*/
     display: block;
     margin: auto;
 }
-/*
-* Footer (Rodapé)
-*/
+/*Configuração da tag Strong*/
+main strong{
+  color: var(--cor4);
+  font-weight: bold;
+}
+/* Links do conteudo Principal(main)*/
+main a{
+    text-decoration:none ;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 2px;
+  
+}
+/*Animação com mouse*/
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+} 
+/*Configuração do Aside(a parte)*/
+aside{
+    /*cor de fundo*/
+    background-color: var(--cor1);
+    padding: 10px;
+    /*grau da borda*/
+    border-radius: 10px;
+    /*sombra*/
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.281) ;
+}
+/*configuração do h3 no aside*/
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    /*margem e borda do h3 apadtada ao Aside*/
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*Configuração da Ul somente dentro do aside*/
+aside > ul{
+    /*Tipo de estilo de lista: codigo e espaco(não é compativel com todo navegador)*/
+    list-style-type: '\2714\00A0\00A0';
+    /*Posição da lista: Dentro*/
+    list-style-position: inside;
+    /*quantidade de colunas*/
+    columns: 3;
+}
+
+/* Footer (Rodapé)*/
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8;
+    padding: 5px;
+}
+/*Caminho para configuração de links ex 02*/
+footer > p > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+/*Animação linkdo footer(rodaé)*/
+footer > p > a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
