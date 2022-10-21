@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo 2</title>
+    <style>
+        div.quadro{
+            width: 550px;
+            height: 450px;
+            background-color: azure;
+            border: 2px solid black;
+            
+        }
+        div#q1{
+            background-image: url('imagens/pattern001.png');
+            background-repeat: repeat;
+        }
+        div#q2{
+            background-image: url('imagens/pattern002.png');
+            background-repeat: repeat-x;
+        }
+        div#q3{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: repeat-y;
+        }
+        div#q4{
+            background-image: url('imagens/pattern004.png');
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+    <h2>background-repeat: repeat</h2>
+    <p>
+        Repete a imagem tanto no sentido vertical. quanto horizontal(padrão)
+    </p>
+    <div class="quadro" id="q1"></div>
+    <h1>
+        background-repeat: repeat-x;
+    </h1>
+    <p>
+        Repete apenas no eixo horizontal.
+    </p>
+    <div class="quadro" id="q2"></div>
+    <h1>
+        background-repeat: repeat-y;
+    </h1>
+    <p>
+        Repete apenas no eixo vertical
+    </p>
+    <div class="quadro" id="q3"></div>
+    <h1>background-repeat: no-repeat;</h1>
+    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
+    <div class="quadro" id="q4"></div>
+</body>
+</html>
