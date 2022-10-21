@@ -19,7 +19,6 @@ a{
     color: white;
     text-decoration: none;
     padding: 9px;
-    text-justify: auto;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -31,27 +30,46 @@ a:hover{
     font-family: Arial, Helvetica, sans-serif;
    
 }
-
-iframe{
-   margin-top: center;
-  
-}
-
-h1{
-    font-family:'Dancing Script','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4em;
-    color: black;
-    text-decoration: dotted;
-    text-align: center;
-}
 nav{
     text-align: center;
+    padding: auto;
 }
 p{
     text-align: center;
 }
 div.box-parent-login{
     text-decoration: dashed;
+}
+div.boas-vindas{
+    background-image: url('../farolbarra.png');
+    background-position: left center;
+    padding: auto;
+    background-size: cover;
+    margin: 1px;
+    padding: 1px;
+    height: 84vh;
+    max-height: 110vh;
+    min-width:40%;
+  
+
+}
+div.boas-vindas>h1{
+    font-family:'Dancing Script','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10ex;
+    color: black;
+    text-shadow: 2px 2px 2px #0c4e80;
+    text-decoration: dotted;
+    text-align: center;
+    text-align: right;
+    margin:28px 27px 0px 0px;
+}
+div.boas-vindas>h2{
+    text-align:right;
+    text-shadow: 2px 2px 2px #0c4e80;
+    margin: -25px 40px 0px 1px;
+    padding: 0px;
+    font-size: 4ex;
+    font-family:'Dancing Script','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 main{
     padding: 6px 10px;
