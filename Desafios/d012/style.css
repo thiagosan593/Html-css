@@ -68,29 +68,39 @@ section.normal{
 
        
 }
-section.nornal>p{
+section.normal>p{
     padding: 10px;
+    
 }
    
 section.img{
   background-color: rgba(0, 0, 0, 0.452); 
   color: white;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  /*fixa imagem efeito paralax*/
+  background-attachment: fixed;
+
 }
+
 section.img > p{
     background-color: rgba(0, 0, 0, 0.356);
     display: inline-block;
     padding: 10px;
+    text-shadow: 2px 2px 2px black;
     
+    
+}
+selection >p{
+    padding-bottom: 2em;
 }
 #fundo001{
     background-image: url(imagens/background001.jpg);
-    background-position: center center;
-    background-size: cover;
+    background-position: right center;
 }
 #fundo002{
     background-image: url(imagens/background002.jpg);
     background-position: center center;
-    background-size: cover;
 }
 
 footer{
