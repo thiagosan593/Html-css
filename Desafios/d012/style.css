@@ -1,70 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
 
+    min-width: 100vh;
+    background-color: darkcyan;
+    font-family: var(--fonte1);
+}
 :root{
-    --fonte-titulo: 'Bebas Neue', cursive;
-    --fonte-paragrafo: 'Sriracha', cursive;
-}
-main{
-    margin: auto;
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'passione one', cursive;
+    --fonte3: 'Sriracha', cursive;
+   
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
     margin-bottom: 0px;
-    padding: 20px;
+    padding: 50px;
     margin: auto;
-   
 }
+   
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolde;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
 header>h1{
-    font-family: var(--fonte-titulo);
-    padding: 21px 4px 0px 4px;
-    font-size: 15vh;
-    margin: -30px;
+    font-family: var(--fonte2);
+      padding: 21px 4px 0px 4px;
+    font-size: 6vw;
+    /*muda pra maiúscula*/
+       text-transform: uppercase;
+    /*deixa as primeiras letras maiores*/
+    font-variant: small-caps;
   
 }
 header>p{
-    font-family: var(--fonte-titulo);
     font-size: 1em;
     padding: 1px;
   padding-bottom: 4px;
   
 }
-section>p{
-    font-family: var(--fonte-paragrafo);
-    font-size: 2.2em;
-   padding: 8px 8px 0px 8px;
-   margin: 0px;
+section{
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /*espacamento entre as linhas*/
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3vw;
 }
 
-section{
+section.normal{
     background-color:white;
-    padding: 5px;
-    width:98%;
-    height: 63%;
-    margin-bottom:0px;
+    color: black;
+
+       
 }
-section>p{
-      width: 424px;
-    height: 400px;
-    padding:  6px 10px 52px 32px;
-    margin:10px 10px 34px 28px
+section.nornal>p{
+    padding: 10px;
 }
-section#img >p{
+   
+section.img{
   background-color: rgba(0, 0, 0, 0.452); 
   color: white;
-  width: 424px;
-  height: 400px;
-  padding: 96px;
+}
+section.img > p{
+    background-color: rgba(0, 0, 0, 0.356);
+    display: inline-block;
+    padding: 10px;
+    
 }
 #fundo001{
     background-image: url(imagens/background001.jpg);
@@ -76,12 +92,7 @@ section#img >p{
     background-position: center center;
     background-size: cover;
 }
-.img>p{
-    background-color:rgba(0, 0, 0, 0.281);
-    color: white;
-    padding:  6px 10px 52px 32px;
-    margin:10px 10px 34px 28px
-}
+
 footer{
     background-color: black;
     color: white;
