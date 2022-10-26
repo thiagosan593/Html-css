@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+:root{
+    --fonte-titulo: 'Bebas Neue', cursive;
+    --fonte-paragrafo: 'Sriracha', cursive;
+}
+main{
+    margin: auto;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 20px;
+   
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+header>h1{
+    font-family: var(--fonte-titulo);
+    padding: 21px 4px 0px 4px;
+    font-size: 6em;
+    margin: -30px;
+  
+}
+header>p{
+    font-family: var(--fonte-titulo);
+    font-size: 1em;
+    padding: 1px;
+  padding-bottom: 4px;
+  
+}
+article>p{
+    font-family: var(--fonte-paragrafo);
+    font-size: 2.2em;
+   padding: 8px 8px 0px 8px;
+   margin: 0px;
+}
+
+article{
+    background-color:white;
+    padding: 5px;
+    width:98%;
+    height: 63%;
+    margin-bottom:0px;
+}
+article>p{
+      width: 424px;
+    height: 400px;
+    padding: 96px;
+  
+}
+article#img >p{
+  background-color: rgba(0, 0, 0, 0.452); 
+  color: white;
+  width: 424px;
+  height: 400px;
+  padding: 96px;
+}
+.fundo001{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.fundo002{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+   
+}
