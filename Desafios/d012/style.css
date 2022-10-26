@@ -13,25 +13,27 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    margin: -4px;
     margin-bottom: 0px;
     padding: 20px;
    
 }
 header>h1{
     font-family: var(--fonte-titulo);
-    font-size: 3em;
-   margin: 0px ;
+    padding: 21px 4px 0px 4px;
+    font-size: 6em;
+    margin: -30px;
+  
 }
 header>p{
     font-family: var(--fonte-titulo);
     font-size: 1em;
-   padding-bottom: 6px;
-    margin-bottom: 8px;
+    padding: 1px;
+  padding-bottom: 4px;
+  
 }
 article>p{
     font-family: var(--fonte-paragrafo);
-    font-size: 1.5em;
+    font-size: 2.2em;
    padding: 8px 8px 0px 8px;
    margin: 0px;
 }
@@ -39,25 +41,30 @@ article>p{
 article{
     background-color:white;
     padding: 5px;
-    width:99%;
+    width:98%;
     height: 63%;
-    margin-bottom: 3px;
+    margin-bottom:0px;
 }
 article>p{
-   width: 300px;
-  height: 400px;
-  padding:6px
+      width: 424px;
+    height: 400px;
+    padding: 96px;
   
 }
 article#img >p{
   background-color: rgba(0, 0, 0, 0.452); 
   color: white;
-  width: 300px;
+  width: 424px;
   height: 400px;
-  padding: 10px;
+  padding: 96px;
 }
-#img{
+.fundo001{
     background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.fundo002{
+    background-image: url(imagens/background002.jpg);
     background-position: center center;
     background-size: cover;
 }
