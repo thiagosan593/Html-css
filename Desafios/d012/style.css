@@ -9,6 +9,13 @@
 main{
     margin: auto;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 header{
     background-color: black;
     color: white;
@@ -31,42 +38,48 @@ header>p{
   padding-bottom: 4px;
   
 }
-article>p{
+section>p{
     font-family: var(--fonte-paragrafo);
     font-size: 2.2em;
    padding: 8px 8px 0px 8px;
    margin: 0px;
 }
 
-article{
+section{
     background-color:white;
     padding: 5px;
     width:98%;
     height: 63%;
     margin-bottom:0px;
 }
-article>p{
+section>p{
       width: 424px;
     height: 400px;
-    padding: 96px;
-  
+    padding:  6px 10px 52px 32px;
+    margin:10px 10px 34px 28px
 }
-article#img >p{
+section#img >p{
   background-color: rgba(0, 0, 0, 0.452); 
   color: white;
   width: 424px;
   height: 400px;
   padding: 96px;
 }
-.fundo001{
+#fundo001{
     background-image: url(imagens/background001.jpg);
     background-position: center center;
     background-size: cover;
 }
-.fundo002{
+#fundo002{
     background-image: url(imagens/background002.jpg);
     background-position: center center;
     background-size: cover;
+}
+.img>p{
+    background-color:rgba(0, 0, 0, 0.281);
+    color: white;
+    padding:  6px 10px 52px 32px;
+    margin:10px 10px 34px 28px
 }
 footer{
     background-color: black;
