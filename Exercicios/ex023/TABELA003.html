@@ -12,9 +12,18 @@
         }
         table{
             width: 500px;
+            border-collapse: collapse;
         }
-        td{
+        td,th{
             border: 1px solid black;
+            padding: 10px;
+        }
+        thead , tfoot{
+            background-color: grey;
+            color: white;
+        }
+        td.num{
+            text-align: rightw;
         }
     </style>
 </head>
@@ -40,11 +49,40 @@
         <TBody>
             <TR>
                 <TD>São paulo</TD>
-                <td>45 919 049</td>
+                <td class="num">45.919.049</td>
             </TR>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">114.339.75</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+
+
         </TBody>
         <TFoot>
-
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>131.594.132</strong></td>
+            </tr>
         </TFoot>
     </TABle>
 </body>
