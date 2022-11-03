@@ -13,6 +13,8 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            /*posição efeito fixo*/
+            position: relative;
         }
         td,th{
             border: 1px solid black;
@@ -22,8 +24,27 @@
             background-color: grey;
             color: white;
         }
+        /*cabecalho fixo tabelas grandes */
+        thead > tr >th {
+            position: sticky;
+            top:0;
+            background-color: grey;
+              border: 1px solid black;
+        }
         td.num{
-            text-align: rightw;
+            text-align: right;
+        }
+        caption{
+           font-size: 1.5en;
+           font-weight: bold;
+           padding: 10px;
+           background-color: lightgray;
+           border: 1px solid black;
+
+        }
+        /* efeito zebrado*/
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -32,6 +53,7 @@
     <!--
         Anatomia de tabelas grande
         TABLE
+         Caption -> legenda da tabela 
             THEAD
                 TR,TD,TH
             TBODY
@@ -40,10 +62,11 @@
                 TR,TD,TH
     -->
     <TABle>
+        <caption>População das Unidades Federativas</caption>
         <THead>
             <Tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 100px;">POPULAÇÃO</th>
             </Tr>
         </THead>
         <TBody>
@@ -75,12 +98,39 @@
                 <td>Pernambuco</td>
                 <td class="num">9.557.071</td>
             </tr>
+            <TD>São paulo</TD>
+            <td class="num">45.919.049</td>
+        </TR>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">21.168.791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14.873.064</td>
+        </tr>
+        <tr>
+            <td>Parana</td>
+            <td class="num">114.339.75</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11.377.239</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td class="num">9.557.071</td>
+        </tr>
 
 
         </TBody>
         <TFoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>131.594.132</strong></td>
             </tr>
         </TFoot>

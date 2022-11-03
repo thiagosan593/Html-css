@@ -71,13 +71,19 @@ div.boas-vindas>h2{
     font-size: 4ex;
     font-family:'Dancing Script','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+div >h1{
+    text-align: center;
+    font-family: 'Dancing Script','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    margin-bottom: 2px;
+}
 main{
     padding: 6px 10px;
 
 }
 
 .login{
-    background-image: linear-gradient(white,rgb(192, 185, 185)80, 169, 169));
+    background-image: linear-gradient(white,rgb(192, 185, 185)80, 169, 169);
 
 }
 #login {
