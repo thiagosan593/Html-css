@@ -7,8 +7,8 @@ Para ter acesso a área administrativa  do site
 
 Cenário: Login válido 
 Quando eu logo com os meus dados
-| Login		| Senha  |
-| 987654	|123456 |
+| Login		| 987654  |
+|  Senha	|123456 |
 Então sou redirecionado para área logada
 
 Cenário: Login invalido 

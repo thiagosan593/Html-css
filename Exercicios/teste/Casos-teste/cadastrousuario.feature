@@ -1,7 +1,7 @@
 # language: pt 
 
 Funcionalidade: Cadastrar um Usuário
-Como usuário/administrador do site
+Como administrador do site
 Eu quero cadastrar um usuário 
 Para que tenha acesso a parte administrativa do site
 
