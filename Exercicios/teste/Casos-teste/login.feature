@@ -1,4 +1,5 @@
 # language: pt 
+# coding: utf-8
 
 Funcionalidade: Logar em área cadastrada 
 Como um usuário/administrador do site Conecta Salvador 
@@ -11,7 +12,7 @@ Quando eu logo com os meus dados
 |  Senha	|123456 |
 Então sou redirecionado para área logada
 
-Cenário: Login invalido 
+Cenário: Login invalido
 Quando não tenho cadastro ou tento logar com matrícula  ou senha incorreta
 Então eu vejo: "matrícula ou senha inválida"
 
