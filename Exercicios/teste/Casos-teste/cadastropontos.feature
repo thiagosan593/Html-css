@@ -22,7 +22,8 @@ mais de uma vez
 Então vejo: Existe um cadastro com os mesmos dados, deseja continuar?
 
 Cenário: Cadastro incompleto
-Quando ao cadastrar e os campos não estejam completos					| Nome			| Localização		| Horário de funcionamento | Sobre	|
-| Farol da Barra	|                                	| Todos os dia 8hs às 18hs | ******	|
+Quando ao cadastrar e os campos não estejam completos
+| Nome	         | Localização | Horário de funcionamento | Sobre	|
+| Farol da Barra |             | Todos os dia 8hs às 18hs | ******	|
 Então vejo a mensagem preencha todos os dados.
 
