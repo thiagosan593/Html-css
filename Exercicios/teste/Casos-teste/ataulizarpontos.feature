@@ -1,6 +1,6 @@
 # language: pt 
 
-Funcionalidade: Atualizar cadastrar de pontos turísticos ou áreas comerciais 
+Funcionalidade: Atualizar cadastro de pontos turísticos ou áreas comerciais 
 Como um usuário/administrador do site Conecta Salvador 
 Eu quero fazer uma atualização de dados
 Para que estejam atualizados  
