@@ -16,5 +16,6 @@ Cenário: Exclusão com falha
 Quando desejo excluir o cadastro de um ponto turístico ou área comercial 
 | Nome			|  Localizador		| Deseja excluir? |	
 | Farol da Barra	| Farol da Barra	|  (SIM) (NÃO)     |	
-Então vejo a mensagem  ocorreu um erro, tente novamente!
+
+  Então vejo a mensagem  "ocorreu um erro, tente novamente!"
 
