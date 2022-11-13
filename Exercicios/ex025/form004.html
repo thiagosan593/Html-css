@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 04</title>
+    <style>
+        fieldset{
+            width:250px ; 
+        }
+        fieldset > p{
+
+        text-align: right;  
+        }
+        legend{
+            text-align: center;
+        }
+        p, h1{
+            width: 270px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 04</h1>
+    <form action="cadastro.java" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label >
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="user@email.com">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel-national" required pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" placeholder="(00)00000-0000">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
