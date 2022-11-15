@@ -3,7 +3,47 @@
 /*todas as demais midias*/
 
 /*impressão*/
-@media print {}
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        /*impressora não imprime background*/
+        background-image: url(../imagens/back-print.jpg); 
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after{
+        text-align: center;
+        text-decoration: overline;
+        content: 'www.teste.com.br';
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#desktop {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
 
 /*tablet*/
 @media screen and (min-width:768px) and (max-width: 992px) {
@@ -67,6 +107,10 @@
 @media screen and (min-width:1920px) {
     body {
         background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
     }
 
     img#phone {
