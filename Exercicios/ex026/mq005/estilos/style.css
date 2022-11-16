@@ -32,6 +32,9 @@ menu{
 menu>ul{
     list-style-type: none;
 }
+menu> ul{
+    text-align: center;
+}
 menu> ul>li>a{
     display: block;
     text-decoration: none;
