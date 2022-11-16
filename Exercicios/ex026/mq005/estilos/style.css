@@ -17,12 +17,18 @@ header >h1 ,h2{
 span#burger{
     background-color: rgb(92, 91, 91) ;
     display: block;
+    text-align: center;
     padding: 10px;
     color: white;
+    cursor: pointer;
+}
+span#burger:hover{
+    background: white;
+    color: black;
 }
 
 menu{
-    display: block;
+    display: none;
 }
 menu>ul{
     list-style-type: none;
