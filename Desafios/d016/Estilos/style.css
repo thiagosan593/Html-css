@@ -26,6 +26,8 @@ section#login{
     transform: translate(-50%,-50%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+    transition: width .3s, heigth .3s; 
+    transition-timing-function: ease;
 }
 div#imagem{
     display: block;
@@ -58,8 +60,7 @@ form>p{
 #submit{
     border: none;
     background-color: aqua;
-    width: 35vw;
-    height: 5vh;
+
 }
 
 
