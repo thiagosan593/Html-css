@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 100px;
+    background-color: aqua;
+}
+main{
+    border-radius: 10px;
+}
+main>section{
+    background-color: white;
+    padding:0px;
+}
+main>section>h1 ,p{
+    padding: 10px;
+}
+div#imagem{
+    padding: 30px;
+    background-size: cover;
+    background: black url(../imagens/metal.jpg);
+}
