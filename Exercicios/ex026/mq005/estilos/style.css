@@ -17,7 +17,6 @@ header >h1 ,h2{
 span#burger{
     background-color: rgb(92, 91, 91) ;
     display: block;
-    text-align: center;
     padding: 10px;
     color: white;
     cursor: pointer;
