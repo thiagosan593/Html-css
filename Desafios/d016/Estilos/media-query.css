@@ -16,6 +16,13 @@
         float: right;
         width: 70%;
     }
+    #isenha , #iemail{
+        width: 93%;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+    } 
+    
     
 }
 
@@ -36,4 +43,11 @@
         float: left;
         width: 50%;
     }
+    #isenha , #iemail{
+        width: 93%;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+    } 
+    
 }
