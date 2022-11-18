@@ -40,3 +40,13 @@ Num| Descrição
 04|[Emojis](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d004)
 05|[Redes Social](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d005)
 06|[Tags](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d006)
+07|[Imagem Flexível](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d007)
+08|[Navegação de pags](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d008)
+09|[Links Videos](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d009)
+10|[Android Site](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d010)
+11|[Astronauta](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d011)
+12|[Cordel Moderno](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d012)
+13|[Tabelas](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d013)
+14|[Tabela 02](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d014)
+15|[Projeto Rede social](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d015)
+
