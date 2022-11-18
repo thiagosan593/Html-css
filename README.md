@@ -34,4 +34,9 @@ Num| Descrição
   
   Num| Descrição
 ----|----
-01|[Mensagens](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d001/index.html)
+01|[Mensagens](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d001)
+02|[Imagens](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d002)
+03|[Mapa](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d003)
+04|[Emojis](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d004)
+05|[Redes Social](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d005)
+06|[Tags](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d006)
