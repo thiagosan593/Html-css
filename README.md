@@ -24,8 +24,14 @@ Num| Descrição
 19|[Seletores](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex019)
 20|[Links / Hovers ,Pseudo-Classe](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex020)
 21|[Caixas,gruping tags](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex021)
+22|[Fundos](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex022)
+23|[Tabelas](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex023)
+24|[Iframes](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex024)
+25|[Forms](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex025)
+26|[Media Queries](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex026)
+
   Desafios
   
   Num| Descrição
 ----|----
-01|
+01|[Mensagens](https://github.com/thiagosan593/Html-css/blob/master/Desafios/d001/index.html)
