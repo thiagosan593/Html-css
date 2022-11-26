@@ -2,8 +2,7 @@
 Exercícios do Curso de HTML - CSS                                                                                         
 
 Num| Descrição
-----|----
-                           
+----|----                          
 02|[Parágrafo, Símbolos especiais e emojis](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/Ex002)
 03|[Uso de Imagens](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex003)
 04|[Favicon](https://github.com/thiagosan593/Html-css/tree/master/Exercicios/ex004)
